@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #ffb84d;
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    padding: 12px;
+    border-top: 5px double white;
+    border-bottom: 5px double white;
+}
+.title {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0px 0px 8px #000;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 15;
+}
+
+.background {
+    height: 100%; /*border:1px solid red;*/
+    background-color: #ffd699;
+	background-size: cover; /* ridimensioniamo l'immagine */
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: 0px 76px; /* centriamo l'immagine */
+	position: relative;
+}
+.caption{ 
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index:1;
+}
+.caption__copy{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color:#fff;
+}
+
+.nessun_evento {
+    color: white;
+    font-family: Courier;
+    text-shadow: 2px 0 #000,-2px 0 #000,0 2px #000,0 -2px #000,2px 2px #000,-2px -2px #000,2px -2px #000,-2px 2px #000;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.button {
+    width: 250px;
+    border-style: solid;
+    border-color: #ffb84d;
+    border-radius: 10px;
+    border-width: 4px;
+    background-color: floralwhite;
+    text-align: center;
+    padding: 10px 20px 6px 20px;
+    font-family: Palatino;
+    font-size: 20px;
+    color: #e68a00;
+    letter-spacing: 1px;
+}
+.button:hover{
+    background-color: cornsilk;
+    color: #000;
+    font-weight: bold;
+}

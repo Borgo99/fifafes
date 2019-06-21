@@ -1,0 +1,14 @@
+html,body {
+    height: 100%;
+}
+
+.background {
+    height: 70%; /*border:1px solid red;*/
+	
+	background-image: url(sfondo.jpg);
+	background-size: cover; /* ridimensioniamo l'immagine */
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center; /* centriamo l'immagine */
+	position: relative;
+}
