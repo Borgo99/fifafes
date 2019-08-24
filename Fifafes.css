@@ -86,3 +86,44 @@ a {
     left: 65%;
     pointer-events: none;
 }
+
+@media (max-width: 767px){
+    
+    .background{
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        background-position: -110px 70px;
+    }
+
+    .button {
+        width: 250px;
+        border-style: solid;
+        border-color: #ffb84d;
+        border-radius: 10px;
+        border-width: 3px;
+        background-color: floralwhite;
+        text-align: center;
+        padding: 10px 15px 6px 15px;
+        font-family: Palatino;
+        font-size: 16px;
+        color: #e68a00;
+        letter-spacing: 1px;
+        position: relative;
+        top: 150px;
+        left: 25%;
+    }
+
+    div {
+        margin: 50px 0px 50px 0px;
+    }
+
+    .header{
+        height: 50px;
+    }    
+
+    .title {
+        font-size: 40px;
+    }
+    
+}
