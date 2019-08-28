@@ -1,42 +1,35 @@
 html,body {
-    height: 100%;
+}
+body {
+    box-sizing: border-box;
+    padding: 0px;
 }
 
 .header {
+    display: block;
     background-color: #ffb84d;
-    width: 100%;
-    height: 62px;
     text-align: center;
-    position: fixed;
-    z-index: 10;
-    left: 0px;
-    top: 0px;
-    padding: 12px;
-    border-top: 5px double white;
-    border-bottom: 5px double white;
+    padding: 4vh;
+    border-top: 1vh double white;
+    border-bottom: 1vh double white;
 }
 .title {
     color: #fff;
-    font-size: 50px;
+    font-size: 5vh;
     text-shadow: 0px 0px 8px #000;
     letter-spacing: 3px;
-    position: relative;
-    z-index: 15;
 }
 
 a {
     text-decoration: none;
 }
 
-.background {
-    height: 100%; /*border:1px solid red;*/
-	background-image: url(sfondo.jpg);
-	background-size: cover; /* ridimensioniamo l'immagine */
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	background-position: 0px 76px; /* centriamo l'immagine */
-    background-repeat: no-repeat;
-	position: relative;
+.section_main {
+    height: 84.43vh;
+    width: 100%;
+    background-image: url(sfondo.jpg);
+    background-size: cover;
+    position: absolute;
 }
 
 .filter {
@@ -46,9 +39,17 @@ a {
     opacity: 0.2; 
     position: absolute;
     z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: block;
+    margin: 0;
 }
 
 .button {
+    display: block;
     width: 250px;
     border-style: solid;
     border-color: #ffb84d;
@@ -61,6 +62,8 @@ a {
     font-size: 20px;
     color: #e68a00;
     letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
 }
 .button:hover{
     background-color: cornsilk;
@@ -68,59 +71,42 @@ a {
     font-weight: bold;
 }
 .btn1 {
-    position: absolute;
-    z-index: 1;
-    top: 140px;
-    left: 37px;
+    margin-left: 100px; 
+    margin-top: 10px;
 }
 .btn2 {
-    position: absolute;
-    z-index: 1;
-    top: 220px;
-    left: 45%;
+    margin-left: 1000px;
+    margin-top: 100px;
 }
 .btn3 {
-    position: absolute;
-    z-index: 1;
-    top: 470px;
-    left: 65%;
+    margin-left: 250px;
     pointer-events: none;
 }
 
 @media (max-width: 767px){
     
-    .background{
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-        background-position: -110px 70px;
+    .section_main {
+        background-position: 25% 0px;
+        background-size: 380%;
+        background-repeat: no-repeat;
     }
-
+    
+    .title span {
+        display: none;
+    }
+    .title:after {
+        content: "FIFAFES"
+    }
+    
     .button {
-        width: 250px;
-        border-style: solid;
-        border-color: #ffb84d;
-        border-radius: 10px;
-        border-width: 3px;
-        background-color: floralwhite;
-        text-align: center;
-        padding: 10px 15px 6px 15px;
-        font-family: Palatino;
-        font-size: 16px;
-        color: #e68a00;
-        letter-spacing: 1px;
-        position: relative;
-        top: 150px;
-        left: 25%;
+        margin: auto;
+        margin-top: 50px; 
     }
-
-    div {
-        margin: 50px 0px 50px 0px;
-    }
-
-    .header{
-        height: 50px;
-    }    
+    
+    .container {
+        width: 100%;
+        margin-top: 300px;
+    }   
 
     .title {
         font-size: 40px;

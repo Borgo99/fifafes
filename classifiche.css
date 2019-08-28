@@ -17,17 +17,12 @@ a {
 }
 
 .header {
+    display: block;
     background-color: #ffb84d;
-    width: 100%;
-    height: 62px;
     text-align: center;
-    position: fixed;
-    z-index: 10;
-    left: 0px;
-    top: 0px;
-    padding: 12px;
-    border-top: 5px double white;
-    border-bottom: 5px double white;
+    padding: 4vh;
+    border-top: 1vh double white;
+    border-bottom: 1vh double white;
 }
 .title {
     color: #fff;
@@ -45,17 +40,13 @@ a {
     background-color: white;
     border-collapse: collapse;
     font-size: 18px;
-    
     position: absolute;
-    z-index: 1;
-    top: 150px;
-    left: 18%; 
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.table2 {
-    position: absolute;
-    z-index: 1;
-    top: 450px;
-    left: 18%; 
+.table2{
+    top: 75%;
 }
 .left {
     text-align: left;
@@ -81,14 +72,36 @@ a {
     color: #e68a00;
     letter-spacing: 1px;
     text-decoration: none;
-    
     position: absolute;
-    z-index: 1;
-    bottom: 20px;
-    left: 40%;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .button:hover{
     background-color: cornsilk;
     color: #000;
     font-weight: bold;
+}
+
+.container {
+    display: block;
+}
+
+/*
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+*/
+
+@media (max-width: 767px){
+     
+    .title span {
+        display: none;
+    }
+    .title:after {
+        content: "FIFAFES"
+    }
+
 }
