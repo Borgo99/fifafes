@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 3vh;
+}
+
 .header {
     display: block;
     background-color: #ffb84d;
@@ -40,13 +44,10 @@ a {
     background-color: white;
     border-collapse: collapse;
     font-size: 18px;
-    position: absolute;
-    top: 18rem;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    margin-top: 5vh;
 }
 .table2{
-    top: 32rem;
 }
 .left {
     text-align: left;
@@ -72,19 +73,40 @@ a {
     color: #e68a00;
     letter-spacing: 1px;
     text-decoration: none;
-    position: absolute;
-    top: 40rem;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 .button:hover{
     background-color: cornsilk;
     color: #000;
     font-weight: bold;
 }
+.btnbox {
+    text-align: center;
+    margin: 8vh;
+}
 
 .container {
     display: block;
+    width: 100%;
+    height: auto;
+}
+
+.votebox {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.votebox_text {
+    display: inline-block;
+    margin-right: 10vw;
+}
+.votebox_btnbox {
+    display: inline-table;
+    height: 100%;
+}
+.btnvote {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /*
@@ -109,6 +131,25 @@ a {
     }
     .font_fit:after {
         content: "#";
+    }
+    
+    .votebox_text {
+        display: block;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    p {
+        font-size: 2.5vh;
+    }
+    
+    .btnbox {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    
+    .btnback {
+        width: 60%;
     }
 
 }
