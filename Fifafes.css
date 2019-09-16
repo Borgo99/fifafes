@@ -81,7 +81,6 @@ a {
 .btn3 {
     margin-left: 940px;
     margin-top: 173px;
-    pointer-events: none;
 }
 
 @media (max-width: 767px){
@@ -90,6 +89,7 @@ a {
         background-position: 25% 0px;
         background-size: 380%;
         background-repeat: no-repeat;
+        height: 100%;
     }
     
     .title span {
