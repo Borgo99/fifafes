@@ -248,7 +248,10 @@ p {
     }
     .winner {
         padding-top: 3vh;
-        font-size: 2.5vw;
+        font-size: 3.2vw;
+    }
+    #winnerName {
+        font-size: 4vw;
     }
     
     
