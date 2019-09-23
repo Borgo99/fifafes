@@ -18,6 +18,7 @@ a {
 
 p {
     font-size: 3vh;
+    margin-block-start: 0;
 }
 
 .header {
@@ -109,6 +110,80 @@ p {
     vertical-align: middle;
 }
 
+.awardsbox {
+    display: table;
+    width: 80%;
+    height: 40vh;
+    margin: 5vh auto;
+    
+    border: 2px solid #000;
+    
+}
+.awardsbox_btn {
+    display: table-cell;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid #000;
+}
+.abtn {
+    display: block;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    background-color: floralwhite;
+    border-bottom: 1px solid grey;
+    color: black;
+    cursor: pointer;
+}
+.abtn:hover {
+    background-color: red;
+}
+.awardsbox_winner {
+    display: table-cell;
+}
+.winner_imgAtt {
+    background-image: url(photos/big-salah-egitto-320x214.jpg);
+    background-size: cover;
+}
+.winner_imgDif {
+    background-image: url(photos/bailly.jpg);
+    background-size: cover;
+}
+.winner_imgCen {
+    background-image: url(photos/ERIKSEN-DANIMARCA_.jpg);
+    background-size: cover;
+}
+.winner_imgPor {
+    background-image: url(photos/ochoa.jpg);
+    background-size: cover;
+}
+.winner {
+    color: floralwhite;
+    padding-left: 2vw;
+    font-family: Palatino;
+    font-size: 2vw;
+    text-align: left;
+}
+#winnerName{
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.mentionsbox {
+    background-color: floralwhite;
+    text-align: center;
+    height: auto;
+}
+.mentionsbox p {
+    padding: 10px 20px 5px 20px;
+}
+.mentionsbox span {
+    font-weight: bold;
+    font-family: Palatino;
+}
+
+
 /*
 
     position: absolute;
@@ -151,5 +226,31 @@ p {
     .btnback {
         width: 60%;
     }
+    
+    .awardsbox {
+        height: auto;
+    }
+    
+    .awardsbox_btn {
+        display: table-row;
+    }
+    .abtn {
+        display: inline-block;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    
+    .awardsbox_winner {
+        height: 30vh;
+        display: table-row;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .winner {
+        padding-top: 3vh;
+        font-size: 2.5vw;
+    }
+    
+    
 
 }

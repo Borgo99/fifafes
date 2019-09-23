@@ -134,8 +134,6 @@ a {
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         margin-top: 10vh;
-        -webkit-perspective: 900000px; 
-        perspective: 900000px;
     }
     
     .btn {

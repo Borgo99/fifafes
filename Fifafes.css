@@ -27,7 +27,7 @@ a {
 .section_main {
     height: 86vh;
     width: 100%;
-    background-image: url(sfondo.jpg);
+    background-image: url(sfondo.png);
     background-size: cover;
     position: absolute;
 }
@@ -75,12 +75,12 @@ a {
     margin-top: 54px;
 }
 .btn2 {
-    margin-left: 650px;
+    margin-left: 670px;
     margin-top: 70px;
 }
 .btn3 {
-    margin-left: 940px;
-    margin-top: 173px;
+    margin-left: 920px;
+    margin-top: 270px;
 }
 
 @media (max-width: 767px){
@@ -106,7 +106,7 @@ a {
     
     .container {
         width: 100%;
-        margin-top: 200px;
+        margin-top: 220px;
     }   
 
     .title {
