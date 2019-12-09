@@ -147,7 +147,7 @@ h2 {
 .background2020 {
     height: 86vh;
     width: 100%;
-    background-image: url(photogallery/SfondoEvento.png);
+    background-image: url(photos/SfondoEvento.png);
     background-size: cover;
     position: absolute;
 }
