@@ -71,7 +71,7 @@ h2 {
     color: #e68a00;
     letter-spacing: 1px;
     display: block;
-    margin-top: 5vh;
+    margin-top: 75vh;
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -144,9 +144,22 @@ h2 {
     background-color: #ffd699; 
 }
 
+.background2020 {
+    height: 86vh;
+    width: 100%;
+    background-image: url(photogallery/SfondoEvento.png);
+    background-size: cover;
+    position: absolute;
+}
 
 
 @media (max-width: 767px){
+    
+    .background2020 {
+        height: 100%;
+        background-size: contain;
+        background-repeat:round;
+    }
  
     .title span {
         display: none;
@@ -196,7 +209,7 @@ h2 {
         margin-right: auto;
         font-size: 2vh;
         width: 60px;
-        margin-top: 0;
+        margin-top: 30vh;
         margin-bottom: 2vh;
     }
     
