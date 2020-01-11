@@ -159,10 +159,26 @@ h2 {
     width: auto;
     position: static;
     display: block;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     transform: none;
+    border-style: solid;
+    border-color: #ffb84d;
+    border-radius: 10px;
+    border-width: 4px;
+    background-color: floralwhite;
+    text-align: center;
+    padding: 10px 20px 6px 20px;
+    font-family: Palatino;
+    font-size: 3vh;
+    color: #e68a00;
+    letter-spacing: 1px;
+}
+.second_block_button:hover{
+    background-color: cornsilk;
+    color: #000;
+    font-weight: bold;
 }
 
 .container {
