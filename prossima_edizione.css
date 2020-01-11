@@ -155,6 +155,15 @@ h2 {
     height: auto;
     margin-left: 20%;
 }
+.second_block_button {
+    width: auto;
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transform: none;
+}
 
 .container {
     height: 86vh;
@@ -181,6 +190,17 @@ h2 {
     
     .container {
         padding-top: 14vh;
+    }
+    
+    .button {
+        position: static;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2vh;
+        width: 60px;
+        margin-bottom: 2vh;
+        transform: none;
     }
     
     .background2020 {
@@ -234,20 +254,12 @@ h2 {
     .second_block_logo_container {
         margin-bottom: 3vh;
     }
+    .second_block_button {
+        width: 60vw;
+    }
     
     .container {
         height: 75vh;
-    }
-    
-    .button {
-        position: static;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 2vh;
-        width: 60px;
-        margin-bottom: 2vh;
-        transform: none;
     }
     
     /* CODICE PER QUANDO NON CI SONO EVENTI IN PROGRAMMA */
