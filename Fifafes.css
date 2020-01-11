@@ -107,7 +107,7 @@ a {
     font-size: 10vh;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1100px){
     
     .section_main {
         background-position: 25% 0px;
