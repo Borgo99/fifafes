@@ -83,13 +83,37 @@ a {
     margin-top: 270px;
 }
 
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url("font/digital-7/digital-7.ttf")
+}
+
+.timer_container {
+    width: 35vw;
+    height: 11vh;
+    position: absolute;
+    left: 55%;
+    top: 7vh;
+    border: solid 3px white;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 50px 20px rgba(247,247,247,0.84);
+    -moz-box-shadow: 0px 0px 50px 20px rgba(247,247,247,0.84);
+    box-shadow: 0px 0px 50px 20px rgba(247,247,247,0.84);
+}
+.timer {
+    color: white;
+    font-family: "digital-7_monomono";
+    font-size: 10vh;
+}
+
 @media (max-width: 767px){
     
     .section_main {
         background-position: 25% 0px;
         background-size: 380%;
         background-repeat: no-repeat;
-        height: 100%;
+        height: 89vh;
     }
     
     .title span {
@@ -106,11 +130,24 @@ a {
     
     .container {
         width: 100%;
-        margin-top: 220px;
+        margin-top: 280px;
     }   
 
     .title {
         font-size: 40px;
+    }
+    
+    .timer_container {
+        position: static;
+        display: block;
+        width: 250px;
+        height: 6vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .timer {
+        font-size: 5vh;
     }
     
 }

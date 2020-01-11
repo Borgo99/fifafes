@@ -15,7 +15,7 @@ p {
     margin-block-end: 0px;
     font-family: Palatino;
 }
-p.second_block_title {
+p.second_block_interview_title {
     text-align: center;
     font-size: 4vh;   
 }
@@ -58,7 +58,7 @@ h2 {
 }
 
 .button {
-    width: 200px;
+    width: 100px;
     border-style: solid;
     border-color: #ffb84d;
     border-radius: 10px;
@@ -71,9 +71,9 @@ h2 {
     color: #e68a00;
     letter-spacing: 1px;
     display: block;
-    margin-top: 75vh;
+    margin-top: 5vh;
     position: absolute;
-    left: 50%;
+    left: 6vw;
     transform: translate(-50%,-50%);
 }
 .button:hover{
@@ -105,7 +105,7 @@ h2 {
 }
 .first_block_secondarytitle {
     font-size: 4vh;
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 .first_block_players {
     font-size: 3.4vh;
@@ -136,6 +136,25 @@ h2 {
     width: 100%;
     margin-top: 2em;
 }
+.second_block_title {
+    text-align: center;
+    font-size: 36px;
+    display: block;
+    margin-top: 15vh;
+}
+.second_block_logo_container {
+    display: table;
+    width: 100%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.second_block_logo {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin-left: 20%;
+}
 
 .container {
     height: 86vh;
@@ -154,6 +173,15 @@ h2 {
 
 
 @media (max-width: 767px){
+    
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+    
+    .container {
+        padding-top: 14vh;
+    }
     
     .background2020 {
         height: 100%;
@@ -200,21 +228,30 @@ h2 {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .second_block_title {
+        margin-top: 5vh;
+    }
+    .second_block_logo_container {
+        margin-bottom: 3vh;
+    }
     
     .container {
         height: 75vh;
     }
     
     .button {
+        position: static;
+        display: block;
         margin-left: auto;
         margin-right: auto;
         font-size: 2vh;
         width: 60px;
-        margin-top: 65vh;
         margin-bottom: 2vh;
+        transform: none;
     }
     
     /* CODICE PER QUANDO NON CI SONO EVENTI IN PROGRAMMA */
+    /*
     .button {
         width: 60%;
     }
@@ -222,5 +259,5 @@ h2 {
         font-size: 3.5vh;
         margin-bottom: 10vh;
     }
-    
+    */
 }
