@@ -1,4 +1,10 @@
-body, html {
+@font-face {
+    font-family: 'eafont';
+    src: url("font/EASPORTS15.ttf")
+}
+
+html {
+    font-family: 'Lato', sans-serif;
 }
 body {
     box-sizing: border-box;
@@ -13,7 +19,6 @@ a {
 p {
     margin-block-start: 1em;
     margin-block-end: 0px;
-    font-family: Palatino;
 }
 p.second_block_interview_title {
     text-align: center;
@@ -31,6 +36,7 @@ h2 {
     padding: 2vh;
     border-top: 1vh double white;
     border-bottom: 1vh double white;
+    font-family: "eafont";
 }
 .title {
     color: #fff;
@@ -65,21 +71,23 @@ h2 {
     border-width: 4px;
     background-color: floralwhite;
     text-align: center;
-    padding: 10px 20px 6px 20px;
-    font-family: Palatino;
+    padding: 7px 20px 6px 20px;
     font-size: 3vh;
     color: #e68a00;
     letter-spacing: 1px;
     display: block;
     margin-top: 5vh;
     position: absolute;
-    left: 6vw;
+    left: 10%;
     transform: translate(-50%,-50%);
 }
 .button:hover{
     background-color: cornsilk;
     color: #000;
     font-weight: bold;
+}
+.btn_torna {
+    display: none;
 }
 
 .first_block {
@@ -148,6 +156,7 @@ h2 {
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 35%;
 }
 .second_block_logo {
     display: inline-block;
@@ -169,8 +178,7 @@ h2 {
     border-width: 4px;
     background-color: floralwhite;
     text-align: center;
-    padding: 10px 20px 6px 20px;
-    font-family: Palatino;
+    padding: 7px 20px 6px 20px;
     font-size: 3vh;
     color: #e68a00;
     letter-spacing: 1px;
@@ -179,6 +187,14 @@ h2 {
     background-color: cornsilk;
     color: #000;
     font-weight: bold;
+}
+.second_block_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border: 5px solid #ffb84d;
+    border-radius: 200px;
 }
 
 .container {
@@ -217,6 +233,10 @@ h2 {
         width: 60px;
         margin-bottom: 2vh;
         transform: none;
+    }
+    .btn_torna {
+        display: block;
+        width: 40%;
     }
     
     .background2020 {

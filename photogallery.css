@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'eafont';
+    src: url("font/EASPORTS15.ttf")
+}
+
 body {
     box-sizing: border-box;
     padding: 0px;
@@ -15,6 +20,7 @@ a {
     padding: 2vh;
     border-top: 1vh double white;
     border-bottom: 1vh double white;
+    font-family: "eafont";
 }
 .title {
     color: #fff;

@@ -1,8 +1,14 @@
-html,body {
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url("font/digital-7/digital-7.ttf")
 }
-body {
-    box-sizing: border-box;
-    padding: 0px;
+@font-face {
+    font-family: 'eafont';
+    src: url("font/EASPORTS15.ttf")
+}
+
+html {
+    font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -12,6 +18,7 @@ body {
     padding: 2vh;
     border-top: 1vh double white;
     border-bottom: 1vh double white;
+    font-family: 'eafont';
 }
 .title {
     color: #fff;
@@ -57,35 +64,19 @@ a {
     border-width: 4px;
     background-color: floralwhite;
     text-align: center;
-    padding: 10px 20px 6px 20px;
-    font-family: Palatino;
+    padding: 8px 20px 6px 20px;
     font-size: 20px;
     color: #e68a00;
     letter-spacing: 1px;
     position: relative;
     z-index: 2;
+    margin-left: 5vw;
+    margin-top: 10vh;
 }
 .button:hover{
     background-color: cornsilk;
     color: #000;
     font-weight: bold;
-}
-.btn1 {
-    margin-left: 60px; 
-    margin-top: 54px;
-}
-.btn2 {
-    margin-left: 670px;
-    margin-top: 70px;
-}
-.btn3 {
-    margin-left: 920px;
-    margin-top: 270px;
-}
-
-@font-face {
-    font-family: 'digital-7_monomono';
-    src: url("font/digital-7/digital-7.ttf")
 }
 
 .timer_container {
