@@ -1,0 +1,244 @@
+.flexbox {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    perspective: 120rem;
+    -moz-perspective: 120rem;
+    height: 90vh;
+    width: 95vw;
+    position: relative;
+
+    i {
+        font-size: 6rem;
+        color: #fff;
+        text-shadow: 0px 1px 8px #000;
+    }
+            
+    .icon {
+        transform: translateY(10px);
+    }
+
+    & > * {
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 2s ease;
+        backface-visibility: hidden;
+        overflow: hidden;
+
+        background-image: $color-juicy-orange;
+        box-shadow: 0rem 2rem 2rem rgba($color: #000000, $alpha: 0.4);
+    }
+
+    transition: all .4s;
+
+    &--clicked {
+        transform: scale(.9);
+    }
+}
+
+//BUTTONS EFFECTS
+[class^="container__button"] {
+    transition: all .4s;
+
+    &:hover {
+        transform: scale(1.07);
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}
+
+//FIRST CONTAINER
+.container {
+
+    background-image: url("../img/sfondo.png");
+    background-size: cover;
+    box-shadow: 0rem 2rem 2rem rgba($color: #000000, $alpha: 0.4);
+
+    display: flex;
+    flex-direction: column;
+
+    [class*="box"] {
+        display: flex;
+    }   
+
+    &__box-top {
+        flex-basis: 15%;
+        justify-content: center;
+    }
+
+    &__box-middle {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__box-bottom {
+        flex-basis: 15%;
+        justify-content: center;
+        align-items: flex-end;
+    } 
+
+    &__logo {
+        flex: 1;
+        text-align: center;
+        color: #fff;
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 7px #000;
+    }
+
+    &__button-top, &__button-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__button-left, &__button-right {
+        display: flex;
+        justify-content: center;
+        flex-basis: 25%;
+    }
+    &__button-right {
+        text-align: right;
+    }
+
+
+    //FOR JS, WHEN A BTN IS CLICKED
+    &--clicked {
+
+        &--top {
+            transform: rotateX(-180deg);
+        }
+
+        &--left {
+            transform: rotateY(180deg);
+        }
+
+        &--right {
+            transform: rotateY(-180deg);
+        }
+
+        &--bottom {
+            transform: rotateX(180deg);
+        }
+    }
+
+}
+
+//CONTAINER TOP => CONTATTI
+.container-top {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateX(180deg);
+
+    &__text {
+        flex: 1;
+
+        color: #fff;
+        font-size: 2.4rem;
+        text-align: center;
+        width: 50%;
+        padding-top: 15rem;
+    }
+
+    &__button-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &--active {
+        transform: rotateX(0deg);
+    }
+}
+
+//CONTAINER LEFT => PASSATA EDIZIONE
+.container-left {
+
+    transform: rotateY(-180deg);
+
+    display: flex;
+    align-items: center;
+
+    &__text {
+        flex-basis: 85%;
+
+        color: #fff;
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 0 15rem;
+
+    }
+
+    &--active {
+        transform: rotateY(0deg);
+    }
+
+}
+
+//CONTAINER RIGHT 
+.container-right {
+
+    transform: rotateY(180deg);
+
+    display: flex;
+    align-items: center;
+
+    &__text {
+        flex-basis: 85%;
+
+        color: #fff;
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 0 15rem;
+
+    }
+
+    &--active {
+        transform: rotateY(0deg);
+    }
+
+}
+
+//CONTAINER BOTTOM
+.container-bottom {
+
+    transform: rotateX(-180deg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        flex: 1;
+
+        color: #fff;
+        font-size: 2.4rem;
+        text-align: center;
+        width: 50%;
+        padding-top: 15rem;
+    }
+
+    &--active {
+        transform: rotateX(0deg);
+    }
+
+}

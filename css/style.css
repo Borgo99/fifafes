@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'eafont';
+  src: url("fonts/EASPORTS15.ttf"); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat"; }
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom right, #c03d23, #ce8013);
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "eafont"; }
+
+.btn {
+  font-size: 3.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 7px #000; }
+
+.flexbox {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.main-container {
+  perspective: 120rem;
+  -moz-perspective: 120rem;
+  height: 90vh;
+  width: 95vw;
+  position: relative;
+  transition: all .4s; }
+  .main-container i {
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 0px 1px 8px #000; }
+  .main-container .icon {
+    transform: translateY(10px); }
+  .main-container > * {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 2s ease;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-image: linear-gradient(to top left, #ff8008, #ffc837);
+    box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4); }
+  .main-container--clicked {
+    transform: scale(0.9); }
+
+[class^="container__button"] {
+  transition: all .4s; }
+  [class^="container__button"]:hover {
+    transform: scale(1.07); }
+  [class^="container__button"]:active {
+    transform: scale(0.9); }
+
+.container {
+  background-image: url("../img/sfondo.png");
+  background-size: cover;
+  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column; }
+  .container [class*="box"] {
+    display: flex; }
+  .container__box-top {
+    flex-basis: 15%;
+    justify-content: center; }
+  .container__box-middle {
+    flex: 1;
+    justify-content: center;
+    align-items: center; }
+  .container__box-bottom {
+    flex-basis: 15%;
+    justify-content: center;
+    align-items: flex-end; }
+  .container__logo {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 7px #000; }
+  .container__button-top, .container__button-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container__button-left, .container__button-right {
+    display: flex;
+    justify-content: center;
+    flex-basis: 25%; }
+  .container__button-right {
+    text-align: right; }
+  .container--clicked--top {
+    transform: rotateX(-180deg); }
+  .container--clicked--left {
+    transform: rotateY(180deg); }
+  .container--clicked--right {
+    transform: rotateY(-180deg); }
+  .container--clicked--bottom {
+    transform: rotateX(180deg); }
+
+.container-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateX(180deg); }
+  .container-top__text {
+    flex: 1;
+    color: #fff;
+    font-size: 2.4rem;
+    text-align: center;
+    width: 50%;
+    padding-top: 15rem; }
+  .container-top__button-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container-top--active {
+    transform: rotateX(0deg); }
+
+.container-left {
+  transform: rotateY(-180deg);
+  display: flex;
+  align-items: center; }
+  .container-left__text {
+    flex-basis: 85%;
+    color: #fff;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 0 15rem; }
+  .container-left--active {
+    transform: rotateY(0deg); }
+
+.container-right {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center; }
+  .container-right__text {
+    flex-basis: 85%;
+    color: #fff;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 0 15rem; }
+  .container-right--active {
+    transform: rotateY(0deg); }
+
+.container-bottom {
+  transform: rotateX(-180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container-bottom__text {
+    flex: 1;
+    color: #fff;
+    font-size: 2.4rem;
+    text-align: center;
+    width: 50%;
+    padding-top: 15rem; }
+  .container-bottom--active {
+    transform: rotateX(0deg); }
