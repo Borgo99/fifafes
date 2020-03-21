@@ -2,6 +2,20 @@
   font-family: 'eafont';
   src: url("fonts/EASPORTS15.ttf"); }
 
+/*
+0 - 600         Phone
+600 - 900       Tablet portrait
+900 - 1200      Tablet landscape
+[1200 - 1800]   Normal Styles
+1800 - inf      Large screen
+*/
+/*
+$breakpoint argument choices
+    phone
+    tab-port
+    tab-land
+    big
+*/
 *,
 *::after,
 *::before {
