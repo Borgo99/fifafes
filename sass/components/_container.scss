@@ -88,7 +88,7 @@
         flex-basis: 15%;
         justify-content: center;
         align-items: flex-end;
-    } 
+    }
 
     &__logo {
         flex: 1;
@@ -97,6 +97,8 @@
         font-size: 4rem;
         text-transform: uppercase;
         text-shadow: 0px 1px 7px #000;
+        cursor: default;
+        user-select: none;
     }
 
     &__button-top, &__button-bottom {
@@ -138,9 +140,8 @@
 
 }
 
-//CONTAINER TOP => CONTATTI
+//CONTAINER TOP => BACHECA
 .container-top {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,6 +191,8 @@
     &--active {
         transform: rotateY(0deg);
     }
+
+    
 
 }
 

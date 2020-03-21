@@ -2,20 +2,6 @@
   font-family: 'eafont';
   src: url("fonts/EASPORTS15.ttf"); }
 
-/*
-0 - 600         Phone
-600 - 900       Tablet portrait
-900 - 1200      Tablet landscape
-[1200 - 1800]   Normal Styles
-1800 - inf      Large screen
-*/
-/*
-$breakpoint argument choices
-    phone
-    tab-port
-    tab-land
-    big
-*/
 *,
 *::after,
 *::before {
@@ -111,7 +97,9 @@ h1 {
     color: #fff;
     font-size: 4rem;
     text-transform: uppercase;
-    text-shadow: 0px 1px 7px #000; }
+    text-shadow: 0px 1px 7px #000;
+    cursor: default;
+    user-select: none; }
   .container__button-top, .container__button-bottom {
     display: flex;
     flex-direction: column;
