@@ -15,6 +15,10 @@
     width: 95vw;
     position: relative;
 
+    @include respond(phone) {
+        height: 83vh;
+    }
+
     i {
         font-size: 6rem;
         color: #fff;
