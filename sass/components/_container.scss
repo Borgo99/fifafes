@@ -147,20 +147,150 @@
 .container-top {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     transform: rotateX(180deg);
 
-    &__text {
-        flex: 1;
+    background-image: url("../img/sfondo3.jpg");
+    background-size: cover;
 
-        color: #fff;
-        font-size: 2.4rem;
-        text-align: center;
-        width: 50%;
-        padding-top: 15rem;
+    .main-box {
+        display: flex;
+        height: 85%;
+
+        &-column1 {
+            margin-top: 3rem;
+            flex-basis: 55%;
+            display: flex;
+            flex-direction: column;
+
+            &__title {
+                @include title1;
+                text-align: center;
+            }
+
+            .box_mvp {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                &-row1, &-row2 {
+                    flex-basis: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 12px;
+                }
+
+                .mvp {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+
+                    &__title, &__name {
+                        @include title1;
+                        font-size: 2rem;
+                    }
+                    &__title {
+                        font-size: 1.5rem;
+                    }
+
+                    &__img {
+                        flex: 1;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+
+                        $img-width: 60%;
+                    
+                        & > * {
+                            border: solid 1.4px $color-white;
+                            border-radius: 5px;
+
+                            transition: all .2s;
+
+                            &:hover {
+                                transform: scale(1.4);
+                            }
+                        }
+                        
+                        .img1 {
+                            height: 100%;
+                            width: $img-width;
+                            background-image: url("../img/balotelli.jpg");
+                            background-size: cover;
+                            //background-position: center;
+                        }
+
+                        .img2 {
+                            height: 100%;
+                            width: $img-width;
+                            background-image: url("../img/soriano.jpg");
+                            background-size: cover;
+                        }
+
+                        .img3 {
+                            height: 100%;
+                            width: $img-width;
+                            background-image: url("../img/danilo.jpg");
+                            background-size: cover;
+                        }
+
+                        .img4 {
+                            height: 100%;
+                            width: $img-width;
+                            background-image: url("../img/handanovic.jpg");
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-column2 {
+            flex-basis: 45%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .box-container-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10rem;
+
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #333; 
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: $color-white; 
+                }
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #777; 
+                }
+
+                p, i {
+                    @include text1;
+                    font-size: 1.8rem;
+                }
+
+                .box-info1, .box-info2 {
+                    width: 70%;
+                }
+                .box-info2 {
+                    padding-top: 3rem;
+                    text-align: left;
+                }
+            }
+        }
     }
 
     &__button-bottom {
+        align-self: flex-end;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -227,11 +357,7 @@
             padding-left: 7%;
 
             &__title {
-                color: $color-white;
-                font-family: 'eafont',;
-                font-size: 4rem;
-                padding: 1rem 5rem;
-                text-shadow: 0px 1px 8px #000;
+                @include title1;
             }
 
             &__list {
@@ -438,19 +564,34 @@
 
     display: flex;
     align-items: center;
+    background-image: url("../img/sfondo2.jpeg");
+    background-size: cover;
 
     &__text {
-        flex-basis: 85%;
+        flex-basis: 50%;
 
         color: #fff;
         font-size: 2.4rem;
         text-align: center;
-        padding: 0 15rem;
+        padding: 0 1rem;
 
     }
 
     &--active {
         transform: rotateY(0deg);
+    }
+
+    .container__button-left {
+        .icon {
+            transform: translateY(-10px);
+        }
+    }
+
+    .sad-icon {
+        width: 10rem;
+        height: 10rem;
+        background-image: url("../img/icon-sad.png");
+        background-size: cover;
     }
 
 }
@@ -464,6 +605,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/sfondo2.jpeg");
+    background-size: cover;
 
     &__text {
         flex: 1;

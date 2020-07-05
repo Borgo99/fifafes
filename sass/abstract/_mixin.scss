@@ -1,0 +1,13 @@
+@mixin title1 {
+    color: $color-white;
+    font-family: 'eafont',;
+    font-size: 4rem;
+    padding: 1rem 5rem;
+    text-shadow: 0px 1px 8px #000;
+}
+
+@mixin text1 {
+    font-size: 6rem;
+    color: $color-white;
+    text-shadow: 0px 1px 8px #000;
+}

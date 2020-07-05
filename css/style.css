@@ -124,16 +124,111 @@ h1 {
 .container-top {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transform: rotateX(180deg); }
-  .container-top__text {
-    flex: 1;
-    color: #fff;
-    font-size: 2.4rem;
-    text-align: center;
-    width: 50%;
-    padding-top: 15rem; }
+  justify-content: center;
+  transform: rotateX(180deg);
+  background-image: url("../img/sfondo3.jpg");
+  background-size: cover; }
+  .container-top .main-box {
+    display: flex;
+    height: 85%; }
+    .container-top .main-box-column1 {
+      margin-top: 3rem;
+      flex-basis: 55%;
+      display: flex;
+      flex-direction: column; }
+      .container-top .main-box-column1__title {
+        color: #ffffe6;
+        font-family: "eafont";
+        font-size: 4rem;
+        padding: 1rem 5rem;
+        text-shadow: 0px 1px 8px #000;
+        text-align: center; }
+      .container-top .main-box-column1 .box_mvp {
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        .container-top .main-box-column1 .box_mvp-row1, .container-top .main-box-column1 .box_mvp-row2 {
+          flex-basis: 50%;
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 12px; }
+        .container-top .main-box-column1 .box_mvp .mvp {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 50%; }
+          .container-top .main-box-column1 .box_mvp .mvp__title, .container-top .main-box-column1 .box_mvp .mvp__name {
+            color: #ffffe6;
+            font-family: "eafont";
+            font-size: 4rem;
+            padding: 1rem 5rem;
+            text-shadow: 0px 1px 8px #000;
+            font-size: 2rem; }
+          .container-top .main-box-column1 .box_mvp .mvp__title {
+            font-size: 1.5rem; }
+          .container-top .main-box-column1 .box_mvp .mvp__img {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: center; }
+            .container-top .main-box-column1 .box_mvp .mvp__img > * {
+              border: solid 1.4px #ffffe6;
+              border-radius: 5px;
+              transition: all .2s; }
+              .container-top .main-box-column1 .box_mvp .mvp__img > *:hover {
+                transform: scale(1.4); }
+            .container-top .main-box-column1 .box_mvp .mvp__img .img1 {
+              height: 100%;
+              width: 60%;
+              background-image: url("../img/balotelli.jpg");
+              background-size: cover; }
+            .container-top .main-box-column1 .box_mvp .mvp__img .img2 {
+              height: 100%;
+              width: 60%;
+              background-image: url("../img/soriano.jpg");
+              background-size: cover; }
+            .container-top .main-box-column1 .box_mvp .mvp__img .img3 {
+              height: 100%;
+              width: 60%;
+              background-image: url("../img/danilo.jpg");
+              background-size: cover; }
+            .container-top .main-box-column1 .box_mvp .mvp__img .img4 {
+              height: 100%;
+              width: 60%;
+              background-image: url("../img/handanovic.jpg");
+              background-size: cover; }
+    .container-top .main-box-column2 {
+      flex-basis: 45%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container-top .main-box-column2 .box-container-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        overflow-y: scroll; }
+        .container-top .main-box-column2 .box-container-info::-webkit-scrollbar {
+          width: 5px; }
+        .container-top .main-box-column2 .box-container-info::-webkit-scrollbar-track {
+          background: #333; }
+        .container-top .main-box-column2 .box-container-info::-webkit-scrollbar-thumb {
+          background: #ffffe6; }
+        .container-top .main-box-column2 .box-container-info::-webkit-scrollbar-thumb:hover {
+          background: #777; }
+        .container-top .main-box-column2 .box-container-info p, .container-top .main-box-column2 .box-container-info i {
+          font-size: 6rem;
+          color: #ffffe6;
+          text-shadow: 0px 1px 8px #000;
+          font-size: 1.8rem; }
+        .container-top .main-box-column2 .box-container-info .box-info1, .container-top .main-box-column2 .box-container-info .box-info2 {
+          width: 70%; }
+        .container-top .main-box-column2 .box-container-info .box-info2 {
+          padding-top: 3rem;
+          text-align: left; }
   .container-top__button-bottom {
+    align-self: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,22 +396,33 @@ h1 {
 .container-right {
   transform: rotateY(180deg);
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-image: url("../img/sfondo2.jpeg");
+  background-size: cover; }
   .container-right__text {
-    flex-basis: 85%;
+    flex-basis: 50%;
     color: #fff;
     font-size: 2.4rem;
     text-align: center;
-    padding: 0 15rem; }
+    padding: 0 1rem; }
   .container-right--active {
     transform: rotateY(0deg); }
+  .container-right .container__button-left .icon {
+    transform: translateY(-10px); }
+  .container-right .sad-icon {
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../img/icon-sad.png");
+    background-size: cover; }
 
 .container-bottom {
   transform: rotateX(-180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-image: url("../img/sfondo2.jpeg");
+  background-size: cover; }
   .container-bottom__text {
     flex: 1;
     color: #fff;
