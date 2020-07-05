@@ -12,6 +12,9 @@
 html {
   font-size: 62.5%;
   font-family: "Montserrat"; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -88,6 +91,19 @@ h1 {
     flex: 1;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .container__box-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .container__box-middle #btn-left {
+          flex-basis: 34%;
+          align-items: center;
+          transform: translateX(-17%); }
+        .container__box-middle #btn-right {
+          flex-basis: 34%;
+          align-items: center;
+          transform: translateX(17%); } }
   .container__box-bottom {
     flex-basis: 15%;
     justify-content: center;
@@ -101,6 +117,9 @@ h1 {
     text-shadow: 0px 1px 7px #000;
     cursor: default;
     user-select: none; }
+    @media only screen and (max-width: 37.5em) {
+      .container__logo {
+        display: contents; } }
   .container__button-top, .container__button-bottom {
     display: flex;
     flex-direction: column;

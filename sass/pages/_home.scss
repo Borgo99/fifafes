@@ -9,6 +9,10 @@
 html {
     font-size: 62.5%;
     font-family: "Montserrat",;
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
 }
 
 body {
