@@ -6,6 +6,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @include respond(phone) {
+        margin-top: -9rem;
+    }
 }
 
 .main-container {
@@ -16,7 +20,7 @@
     position: relative;
 
     @include respond(phone) {
-        height: 83vh;
+        height: 75vh;
     }
 
     i {

@@ -490,6 +490,9 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .flexbox {
+      margin-top: -9rem; } }
 
 .main-container {
   perspective: 120rem;
@@ -500,7 +503,7 @@ h1 {
   transition: all .4s; }
   @media only screen and (max-width: 37.5em) {
     .main-container {
-      height: 83vh; } }
+      height: 75vh; } }
   .main-container i {
     font-size: 6rem;
     color: #fff;
