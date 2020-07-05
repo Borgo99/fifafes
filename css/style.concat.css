@@ -503,7 +503,7 @@ h1 {
   transition: all .4s; }
   @media only screen and (max-width: 37.5em) {
     .main-container {
-      height: 75vh; } }
+      height: 78vh; } }
   .main-container i {
     font-size: 6rem;
     color: #fff;
@@ -718,6 +718,9 @@ h1 {
   justify-content: flex-end;
   background-image: url("../img/sfondo.png");
   background-size: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .container-left {
+      flex-direction: column; } }
   .container-left--active {
     transform: rotateY(0deg); }
   .container-left__button-right {
@@ -726,6 +729,13 @@ h1 {
     flex-basis: 19%; }
     .container-left__button-right .icon {
       transform: translateY(-10px); }
+    @media only screen and (max-width: 37.5em) {
+      .container-left__button-right {
+        flex-basis: 5%;
+        align-items: center;
+        transform: translateX(1rem); }
+        .container-left__button-right .icon {
+          transform: translateY(6px); } }
   .container-left .main-box {
     display: flex;
     flex: 1;
@@ -739,6 +749,9 @@ h1 {
       .container-left .main-box-row1 > *, .container-left .main-box-row2 > * {
         display: flex;
         flex-direction: column; }
+      @media only screen and (max-width: 37.5em) {
+        .container-left .main-box-row1, .container-left .main-box-row2 {
+          flex-direction: column; } }
     .container-left .main-box .box-classifica {
       flex-basis: 60%;
       padding: 2rem 5%;
@@ -818,6 +831,10 @@ h1 {
         padding: 1rem 5rem;
         text-shadow: 0px 1px 8px #000;
         text-align: center; }
+        @media only screen and (max-width: 37.5em) {
+          .container-left .main-box .box-gc__title, .container-left .main-box .box-gs__title {
+            padding: 0;
+            padding-bottom: 1.1rem; } }
       .container-left .main-box .box-gc__list, .container-left .main-box .box-gs__list {
         list-style: none; }
         .container-left .main-box .box-gc__list--player, .container-left .main-box .box-gs__list--player {
@@ -845,6 +862,10 @@ h1 {
       .container-left .main-box .box-gs__list--player:hover {
         transform: scale(1.2) skewX(-5deg) skewY(2deg);
         border: solid #999 1px; }
+      @media only screen and (max-width: 37.5em) {
+        .container-left .main-box .box-gs {
+          padding: 0 20%;
+          padding-bottom: 5vh; } }
   .container-left .download-btn {
     position: absolute;
     right: 3rem;
@@ -866,6 +887,12 @@ h1 {
       background-color: #ce8013; }
     .container-left .download-btn:active {
       transform: scale(0.9); }
+    @media only screen and (max-width: 37.5em) {
+      .container-left .download-btn {
+        width: 35%;
+        position: unset;
+        margin: 0 auto;
+        margin-bottom: 3vh; } }
 
 .container-right {
   transform: rotateY(180deg);

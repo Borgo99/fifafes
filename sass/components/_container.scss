@@ -20,7 +20,7 @@
     position: relative;
 
     @include respond(phone) {
-        height: 75vh;
+        height: 78vh;
     }
 
     i {
@@ -346,6 +346,10 @@
     background-image: url("../img/sfondo.png");
     background-size: cover;
 
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
     &--active {
         transform: rotateY(0deg);
     }
@@ -357,6 +361,16 @@
 
         .icon {
             transform: translateY(-10px);
+        }
+
+        @include respond(phone) {
+            flex-basis: 5%;
+            align-items: center;
+            transform: translateX(1rem);
+
+            .icon {
+                transform: translateY(6px);
+            }
         }
     }
     
@@ -375,6 +389,10 @@
             display: flex;
             & > * {
                 display: flex;
+                flex-direction: column;
+            }
+
+            @include respond(phone) {
                 flex-direction: column;
             }
         }
@@ -504,6 +522,10 @@
                 font-family: 'eafont',;
                 font-size: 3.5rem;
                 padding: 1rem 5rem;
+                @include respond(phone) {
+                    padding: 0;
+                    padding-bottom: 1.1rem;
+                }
                 text-shadow: 0px 1px 8px #000;
                 text-align: center;
             }
@@ -552,6 +574,11 @@
                 transform: scale(1.2) skewX(-5deg) skewY(2deg);
                 border: solid #999 1px;
             }
+
+            @include respond(phone) {
+                padding: 0 20%;
+                padding-bottom: 5vh;
+            }
         }
 
     }
@@ -581,6 +608,13 @@
         }
         &:active {
             transform: scale(.9);
+        }
+
+        @include respond(phone) {
+            width: 35%;
+            position: unset;
+            margin: 0 auto;
+            margin-bottom: 3vh;
         }
     }
 
