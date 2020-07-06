@@ -310,7 +310,8 @@ h1 {
   align-items: center;
   justify-content: flex-end;
   background-image: url("../img/sfondo.png");
-  background-size: cover; }
+  background-size: cover;
+  height: 100%; }
   @media only screen and (max-width: 37.5em) {
     .container-left {
       flex-direction: column; } }

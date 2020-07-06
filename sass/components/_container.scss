@@ -417,6 +417,8 @@
     background-image: url("../img/sfondo.png");
     background-size: cover;
 
+    height: 100%;
+
     @include respond(phone) {
         flex-direction: column;
     }
