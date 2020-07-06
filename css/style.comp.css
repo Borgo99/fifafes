@@ -317,7 +317,8 @@ h1 {
   height: 100%; }
   @media only screen and (max-width: 37.5em) {
     .container-left {
-      flex-direction: column; } }
+      flex-direction: column;
+      overflow: scroll; } }
   .container-left--active {
     transform: rotateY(0deg); }
   .container-left__button-right {

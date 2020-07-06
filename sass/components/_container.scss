@@ -421,6 +421,7 @@
 
     @include respond(phone) {
         flex-direction: column;
+        overflow: scroll;
     }
 
     &--active {
