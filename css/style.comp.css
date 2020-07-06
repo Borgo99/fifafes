@@ -328,7 +328,7 @@ h1 {
       transform: translateY(-10px); }
     @media only screen and (max-width: 37.5em) {
       .container-left__button-right {
-        flex-basis: 5%;
+        flex-basis: 10%;
         align-items: center;
         transform: translateX(1rem); }
         .container-left__button-right .icon {
@@ -338,9 +338,16 @@ h1 {
     flex: 1;
     height: 100%;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     flex-direction: column; }
     .container-left .main-box::-webkit-scrollbar {
-      width: 0px; }
+      width: 5px; }
+    .container-left .main-box::-webkit-scrollbar-track {
+      background: #333; }
+    .container-left .main-box::-webkit-scrollbar-thumb {
+      background: #ffffe6; }
+    .container-left .main-box::-webkit-scrollbar-thumb:hover {
+      background: #777; }
     .container-left .main-box-row1, .container-left .main-box-row2 {
       display: flex; }
       .container-left .main-box-row1 > *, .container-left .main-box-row2 > * {
@@ -349,6 +356,9 @@ h1 {
       @media only screen and (max-width: 37.5em) {
         .container-left .main-box-row1, .container-left .main-box-row2 {
           flex-direction: column; } }
+    @media only screen and (max-width: 37.5em) {
+      .container-left .main-box > * > * {
+        flex-basis: unset; } }
     .container-left .main-box .box-classifica {
       flex-basis: 60%;
       padding: 2rem 5%;

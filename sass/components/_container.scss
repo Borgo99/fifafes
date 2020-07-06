@@ -437,7 +437,7 @@
         }
 
         @include respond(phone) {
-            flex-basis: 5%;
+            flex-basis: 10%;
             align-items: center;
             transform: translateX(1rem);
 
@@ -453,8 +453,18 @@
         flex: 1;
         height: 100%;
         overflow-y: scroll;
+        -webkit-overflow-scrolling:touch;
         &::-webkit-scrollbar {
-            width: 0px;
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #333; 
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $color-white; 
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #777; 
         }
 
         flex-direction: column;
@@ -467,6 +477,14 @@
 
             @include respond(phone) {
                 flex-direction: column;
+            }
+        }
+
+        @include respond(phone) {
+            & > * {
+                & > * { 
+                    flex-basis: unset;
+                }
             }
         }
 
