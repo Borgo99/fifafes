@@ -153,16 +153,22 @@ h1 {
   transform: rotateX(180deg);
   background-image: url("../img/sfondo3.jpg");
   background-size: cover; }
-  @media only screen and (max-width: 37.5em) {
-    .container-top {
-      height: 90vh; } }
   .container-top .main-box {
     display: flex;
-    height: 85%; }
+    height: 85%;
+    max-height: 85%; }
     @media only screen and (max-width: 37.5em) {
       .container-top .main-box {
         flex-direction: column;
-        overflow-y: scroll; } }
+        overflow-y: scroll; }
+        .container-top .main-box::-webkit-scrollbar {
+          width: 5px; }
+        .container-top .main-box::-webkit-scrollbar-track {
+          background: #333; }
+        .container-top .main-box::-webkit-scrollbar-thumb {
+          background: #ffffe6; }
+        .container-top .main-box::-webkit-scrollbar-thumb:hover {
+          background: #777; } }
     .container-top .main-box-column1 {
       margin-top: 3rem;
       flex-basis: 55%;

@@ -183,16 +183,29 @@
     background-size: cover;
 
     @include respond(phone) {
-        height: 90vh;
+        
     }
 
     .main-box {
         display: flex;
         height: 85%;
+        max-height: 85%;
 
         @include respond(phone) {
             flex-direction: column;
             overflow-y: scroll;
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #333; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background: $color-white; 
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: #777; 
+            }
         }
 
         &-column1 {
