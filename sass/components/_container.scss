@@ -8,7 +8,7 @@
     align-items: center;
 
     @include respond(phone) {
-        margin-top: -9rem;
+        margin-top: -7rem;
     }
 }
 
@@ -241,7 +241,7 @@
                         justify-content: center;
 
                         @include respond(phone) {
-                            height: 10vh;
+                            height: 10.5rem;
 
                             .img3 {
                                 background-position: center;
@@ -338,6 +338,12 @@
                     padding-top: 3rem;
                     text-align: left;
                 }
+            }
+        }
+
+        @include respond(phone) {
+            &-column1, %-column2 {
+                flex-basis: unset;
             }
         }
     }
