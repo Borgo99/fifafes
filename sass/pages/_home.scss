@@ -20,6 +20,10 @@ body {
 
     background-image: $color-sunrise;
     overflow: hidden;
+
+    @include respond(phone) {
+        overflow: scroll;
+    }
 }
 
 a {
