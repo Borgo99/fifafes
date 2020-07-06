@@ -161,10 +161,11 @@ h1 {
   background-size: cover; }
   .container-top .main-box {
     display: flex;
-    height: 85%;
-    max-height: 85%; }
+    height: 85%; }
     @media only screen and (max-width: 37.5em) {
       .container-top .main-box {
+        white-space: nowrap;
+        height: 150vh;
         flex-direction: column;
         overflow-y: scroll; }
         .container-top .main-box::-webkit-scrollbar {

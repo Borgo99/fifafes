@@ -192,9 +192,10 @@
     .main-box {
         display: flex;
         height: 85%;
-        max-height: 85%;
 
         @include respond(phone) {
+            white-space: nowrap;
+            height: 150vh;
             flex-direction: column;
             overflow-y: scroll;
             &::-webkit-scrollbar {
