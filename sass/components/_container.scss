@@ -44,6 +44,7 @@
         overflow: hidden;
         @include respond(phone) {
             overflow: scroll;
+            -webkit-overflow-scrolling:touch;
         }
 
         background-image: $color-juicy-orange;
@@ -198,6 +199,7 @@
             height: 150vh;
             flex-direction: column;
             overflow-y: scroll;
+            -webkit-overflow-scrolling:touch;
             &::-webkit-scrollbar {
                 width: 5px;
             }
