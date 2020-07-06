@@ -526,8 +526,7 @@ h1 {
     box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4); }
     @media only screen and (max-width: 37.5em) {
       .main-container > * {
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch; } }
+        overflow: auto; } }
   .main-container--clicked {
     transform: scale(0.9); }
 
@@ -609,6 +608,9 @@ h1 {
   transform: rotateX(180deg);
   background-image: url("../img/sfondo3.jpg");
   background-size: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .container-top {
+      min-height: 0; } }
   .container-top .main-box {
     display: flex;
     height: 85%; }
@@ -617,8 +619,7 @@ h1 {
         white-space: nowrap;
         height: 150vh;
         flex-direction: column;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch; }
+        overflow-y: auto; }
         .container-top .main-box::-webkit-scrollbar {
           width: 5px; }
         .container-top .main-box::-webkit-scrollbar-track {

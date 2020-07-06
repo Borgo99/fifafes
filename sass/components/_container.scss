@@ -43,8 +43,7 @@
         backface-visibility: hidden;
         overflow: hidden;
         @include respond(phone) {
-            overflow: scroll;
-            -webkit-overflow-scrolling:touch;
+            overflow: auto;
         }
 
         background-image: $color-juicy-orange;
@@ -187,7 +186,7 @@
     background-size: cover;
 
     @include respond(phone) {
-        
+        min-height: 0;
     }
 
     .main-box {
@@ -198,8 +197,7 @@
             white-space: nowrap;
             height: 150vh;
             flex-direction: column;
-            overflow-y: scroll;
-            -webkit-overflow-scrolling:touch;
+            overflow-y: auto;
             &::-webkit-scrollbar {
                 width: 5px;
             }
