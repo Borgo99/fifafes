@@ -75,6 +75,9 @@ h1 {
     overflow: hidden;
     background-image: linear-gradient(to top left, #ff8008, #ffc837);
     box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4); }
+    @media only screen and (max-width: 37.5em) {
+      .main-container > * {
+        overflow: scroll; } }
   .main-container--clicked {
     transform: scale(0.9); }
 

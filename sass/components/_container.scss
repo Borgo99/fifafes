@@ -42,6 +42,9 @@
         transition: all 2s ease;
         backface-visibility: hidden;
         overflow: hidden;
+        @include respond(phone) {
+            overflow: scroll;
+        }
 
         background-image: $color-juicy-orange;
         box-shadow: 0rem 2rem 2rem rgba($color: #000000, $alpha: 0.4);
