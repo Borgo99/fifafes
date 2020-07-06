@@ -186,6 +186,11 @@
         display: flex;
         height: 85%;
 
+        @include respond(phone) {
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+
         &-column1 {
             margin-top: 3rem;
             flex-basis: 55%;
@@ -218,9 +223,15 @@
                     &__title, &__name {
                         @include title1;
                         font-size: 2rem;
+                        text-align: center;
                     }
                     &__title {
                         font-size: 1.5rem;
+
+                        @include respond(phone) {
+                            font-size: 2rem;
+                            padding: 1rem 2rem;
+                        }
                     }
 
                     &__img {
@@ -228,6 +239,14 @@
                         width: 100%;
                         display: flex;
                         justify-content: center;
+
+                        @include respond(phone) {
+                            height: 10vh;
+
+                            .img3 {
+                                background-position: center;
+                            }
+                        }
 
                         $img-width: 60%;
                     
@@ -302,6 +321,11 @@
                     background: #777; 
                 }
 
+                @include respond(phone) {
+                    overflow-y: unset;
+                    margin-top: 5rem;
+                }
+
                 p, i {
                     @include text1;
                     font-size: 1.8rem;
@@ -324,6 +348,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include respond(phone) {
+            //flex-basis: 5%;
+            //align-items: center;
+            //transform: translateX(1rem);
+            width: 90%;
+            margin: 0 auto;
+
+            .icon {
+                transform: translateY(6px);
+            }
+
+            & > * {
+                transform: translateY(1.8rem);
+            }
+        }
     }
 
 
