@@ -182,6 +182,10 @@
     background-image: url("../img/sfondo3.jpg");
     background-size: cover;
 
+    @include respond(phone) {
+        height: 90vh;
+    }
+
     .main-box {
         display: flex;
         height: 85%;
@@ -228,9 +232,17 @@
                     &__title {
                         font-size: 1.5rem;
 
+                        br {
+                            display: none;
+                        }
+
                         @include respond(phone) {
                             font-size: 2rem;
                             padding: 1rem 2rem;
+
+                            br {
+                                display: inline;
+                            }
                         }
                     }
 
@@ -241,7 +253,7 @@
                         justify-content: center;
 
                         @include respond(phone) {
-                            height: 10.5rem;
+                            height: 15rem;
 
                             .img3 {
                                 background-position: center;
