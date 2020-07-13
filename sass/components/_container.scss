@@ -43,7 +43,7 @@
         backface-visibility: hidden;
         overflow: hidden;
         @include respond(phone) {
-            overflow: scroll;
+            overflow: hidden;
             -webkit-overflow-scrolling: touch;
         }
 
