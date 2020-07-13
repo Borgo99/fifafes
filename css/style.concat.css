@@ -988,9 +988,10 @@ h1 {
     padding: 2rem;
     margin-top: 10rem;
     overflow: scroll;
-    -webkit-overflow-scrolling: touch; }
+    -webkit-overflow-scrolling: touch;
+    -webkit-touch-overflow: scroll; }
     .container-right .prova p {
-      height: 45vh;
+      height: 150vh;
       font-size: 5rem;
       color: #fff; }
 
