@@ -22,7 +22,7 @@ body {
   overflow: hidden; }
   @media only screen and (max-width: 37.5em) {
     body {
-      overflow: unset; } }
+      overflow: scroll; } }
 
 a {
   text-decoration: none; }
@@ -531,6 +531,7 @@ h1 {
     background-image: url("../img/icon-sad.png");
     background-size: cover; }
   .container-right .prova {
+    height: 50vh;
     padding: 2rem;
     margin-top: 10rem;
     overflow: scroll;
