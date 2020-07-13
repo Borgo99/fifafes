@@ -43,7 +43,7 @@
         backface-visibility: hidden;
         overflow: hidden;
         @include respond(phone) {
-            overflow: auto;
+            overflow: scroll;
         }
 
         background-image: $color-juicy-orange;
@@ -751,6 +751,19 @@
         height: 10rem;
         background-image: url("../img/icon-sad.png");
         background-size: cover;
+    }
+
+    .prova {
+
+        padding: 2rem;
+        margin-top: 10rem;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        p {
+            font-size: 5rem;
+            color: #fff;
+        }
     }
 
 }

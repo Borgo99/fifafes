@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 
     @include respond(phone) {
-        overflow: scroll;
+        overflow: unset;
     }
 }
 

@@ -471,7 +471,7 @@ body {
   overflow: hidden; }
   @media only screen and (max-width: 37.5em) {
     body {
-      overflow: scroll; } }
+      overflow: unset; } }
 
 a {
   text-decoration: none; }
@@ -526,7 +526,7 @@ h1 {
     box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4); }
     @media only screen and (max-width: 37.5em) {
       .main-container > * {
-        overflow: auto; } }
+        overflow: scroll; } }
   .main-container--clicked {
     transform: scale(0.9); }
 
@@ -979,6 +979,14 @@ h1 {
     height: 10rem;
     background-image: url("../img/icon-sad.png");
     background-size: cover; }
+  .container-right .prova {
+    padding: 2rem;
+    margin-top: 10rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .container-right .prova p {
+      font-size: 5rem;
+      color: #fff; }
 
 .container-bottom {
   transform: rotateX(-180deg);
