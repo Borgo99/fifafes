@@ -537,6 +537,7 @@ h1 {
     overflow: scroll;
     -webkit-overflow-scrolling: touch; }
     .container-right .prova p {
+      height: 45vh;
       font-size: 5rem;
       color: #fff; }
 
