@@ -23,7 +23,8 @@ body {
   @media only screen and (max-width: 37.5em) {
     body {
       height: 100%;
-      overflow: scroll; } }
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch; } }
 
 a {
   text-decoration: none; }
@@ -78,7 +79,8 @@ h1 {
     box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4); }
     @media only screen and (max-width: 37.5em) {
       .main-container > * {
-        overflow: scroll; } }
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch; } }
   .main-container--clicked {
     transform: scale(0.9); }
 
