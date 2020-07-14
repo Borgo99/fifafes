@@ -536,6 +536,9 @@ h1 {
     background-image: url("../img/icon-sad.png");
     background-size: cover; }
   .container-right .prova {
+    position: absolute;
+    top: 20%;
+    left: 35%;
     height: 50vh;
     min-height: 50vh;
     padding: 2rem;

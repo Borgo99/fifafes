@@ -755,8 +755,11 @@
         background-size: cover;
     }
 
+    //position: relative;
     .prova {
-
+        position: absolute;
+        top: 20%;
+        left: 35%;
         height: 50vh;
         min-height: 50vh;
         padding: 2rem;
