@@ -44,7 +44,7 @@
         overflow: hidden;
         @include respond(phone) {
             overflow: hidden;
-            -webkit-overflow-scrolling: touch;
+            -webkit-overflow-scrolling: hidden;
         }
 
         background-image: $color-juicy-orange;
@@ -767,7 +767,7 @@
 
         p {
             height: 100%;
-            font-size: 5rem;
+            font-size: 6rem;
             color: #fff;
         }
     }

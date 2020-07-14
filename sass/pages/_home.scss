@@ -23,8 +23,6 @@ body {
 
     @include respond(phone) {
         height: 100%;
-        overflow: unset;
-        -webkit-overflow-scrolling: unset;
     }
 }
 

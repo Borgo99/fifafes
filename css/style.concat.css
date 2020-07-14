@@ -471,9 +471,7 @@ body {
   overflow: hidden; }
   @media only screen and (max-width: 37.5em) {
     body {
-      height: 100%;
-      overflow: unset;
-      -webkit-overflow-scrolling: unset; } }
+      height: 100%; } }
 
 a {
   text-decoration: none; }
@@ -529,7 +527,7 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .main-container > * {
         overflow: hidden;
-        -webkit-overflow-scrolling: touch; } }
+        -webkit-overflow-scrolling: hidden; } }
   .main-container--clicked {
     transform: scale(0.9); }
 
@@ -994,7 +992,7 @@ h1 {
     -webkit-touch-overflow: scroll; }
     .container-right .prova p {
       height: 100%;
-      font-size: 5rem;
+      font-size: 6rem;
       color: #fff; }
 
 .container-bottom {
