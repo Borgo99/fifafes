@@ -471,7 +471,8 @@ body {
   overflow: hidden; }
   @media only screen and (max-width: 37.5em) {
     body {
-      height: 100%; } }
+      height: 100%;
+      z-index: 5; } }
 
 a {
   text-decoration: none; }
@@ -491,6 +492,7 @@ h1 {
   width: 100vw;
   display: flex;
   margin-top: 1vh;
+  z-index: 10;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
@@ -499,6 +501,7 @@ h1 {
       margin-top: 5vh; } }
 
 .main-container {
+  z-index: 20;
   perspective: 120rem;
   -moz-perspective: 120rem;
   height: 100%;
@@ -961,6 +964,7 @@ h1 {
         margin-bottom: 3vh; } }
 
 .container-right {
+  z-index: 50;
   transform: rotateY(180deg);
   height: 100%;
   min-height: 0;
@@ -990,11 +994,13 @@ h1 {
     margin-top: 10rem;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-    -webkit-touch-overflow: scroll; }
+    -webkit-touch-overflow: scroll;
+    z-index: 100; }
     .container-right .prova p {
       height: 100%;
       font-size: 6rem;
-      color: #fff; }
+      color: #fff;
+      z-index: 100; }
 
 .container-bottom {
   transform: rotateX(-180deg);

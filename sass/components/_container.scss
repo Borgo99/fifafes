@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     margin-top: 1vh;
+    z-index: 10;
 
     flex-direction: row;
     justify-content: center;
@@ -14,6 +15,7 @@
 }
 
 .main-container {
+    z-index: 20;
     perspective: 120rem;
     -moz-perspective: 120rem;
     height: 100%;
@@ -720,6 +722,7 @@
 
 //CONTAINER RIGHT 
 .container-right {
+    z-index: 50;
 
     transform: rotateY(180deg);
     height: 100%;
@@ -765,11 +768,13 @@
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
         -webkit-touch-overflow: scroll;
+        z-index: 100;
 
         p {
             height: 100%;
             font-size: 6rem;
             color: #fff;
+            z-index: 100;
         }
     }
 
