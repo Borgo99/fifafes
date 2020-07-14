@@ -1,5 +1,5 @@
 .flexbox {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
 
@@ -15,7 +15,7 @@
 .main-container {
     perspective: 120rem;
     -moz-perspective: 120rem;
-    height: 90vh;
+    height: 100%;
     width: 95vw;
     position: relative;
 
@@ -757,10 +757,7 @@
 
     //position: relative;
     .prova {
-        position: absolute;
-        top: 20%;
-        left: 35%;
-        height: 50vh;
+        height: 100%;
         min-height: 50vh;
         padding: 2rem;
         margin-top: 10rem;
@@ -769,7 +766,7 @@
         -webkit-touch-overflow: scroll;
 
         p {
-            height: 150vh;
+            height: 100%;
             font-size: 5rem;
             color: #fff;
         }

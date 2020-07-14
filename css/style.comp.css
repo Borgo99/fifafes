@@ -40,7 +40,7 @@ h1 {
   user-select: none; }
 
 .flexbox {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -53,7 +53,7 @@ h1 {
 .main-container {
   perspective: 120rem;
   -moz-perspective: 120rem;
-  height: 90vh;
+  height: 100%;
   width: 95vw;
   position: relative;
   transition: all .4s; }
@@ -536,10 +536,7 @@ h1 {
     background-image: url("../img/icon-sad.png");
     background-size: cover; }
   .container-right .prova {
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    height: 50vh;
+    height: 100%;
     min-height: 50vh;
     padding: 2rem;
     margin-top: 10rem;
@@ -547,7 +544,7 @@ h1 {
     -webkit-overflow-scrolling: touch;
     -webkit-touch-overflow: scroll; }
     .container-right .prova p {
-      height: 150vh;
+      height: 100%;
       font-size: 5rem;
       color: #fff; }
 
