@@ -188,16 +188,12 @@
     background-image: url("../img/sfondo3.jpg");
     background-size: cover;
 
-    @include respond(phone) {
-        min-height: 0;
-    }
-
     .main-box {
         display: flex;
         height: 85%;
 
         @include respond(phone) {
-            height: 150vh;
+            height: 100%;
             flex-direction: column;
             overflow-y: scroll;
             @include scrollbar1;
@@ -262,7 +258,6 @@
 
                         @include respond(phone) {
                             height: 15rem;
-                            flex: none;
 
                             .img3 {
                                 background-position: center;
@@ -333,7 +328,7 @@
 
                 @include respond(phone) {
                     overflow-y: unset;
-                    margin-top: 70vh;
+                    margin-top: 10vh;
                 }
 
                 p, i {

@@ -610,15 +610,12 @@ h1 {
   transform: rotateX(180deg);
   background-image: url("../img/sfondo3.jpg");
   background-size: cover; }
-  @media only screen and (max-width: 37.5em) {
-    .container-top {
-      min-height: 0; } }
   .container-top .main-box {
     display: flex;
     height: 85%; }
     @media only screen and (max-width: 37.5em) {
       .container-top .main-box {
-        height: 150vh;
+        height: 100%;
         flex-direction: column;
         overflow-y: scroll; }
         .container-top .main-box::-webkit-scrollbar {
@@ -680,8 +677,7 @@ h1 {
             justify-content: center; }
             @media only screen and (max-width: 37.5em) {
               .container-top .main-box-column1 .box_mvp .mvp__img {
-                height: 15rem;
-                flex: none; }
+                height: 15rem; }
                 .container-top .main-box-column1 .box_mvp .mvp__img .img3 {
                   background-position: center; } }
             .container-top .main-box-column1 .box_mvp .mvp__img > * {
@@ -733,7 +729,7 @@ h1 {
         @media only screen and (max-width: 37.5em) {
           .container-top .main-box-column2 .box-container-info {
             overflow-y: unset;
-            margin-top: 70vh; } }
+            margin-top: 10vh; } }
         .container-top .main-box-column2 .box-container-info p, .container-top .main-box-column2 .box-container-info i {
           font-size: 6rem;
           color: #ffffe6;
