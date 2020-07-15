@@ -197,22 +197,10 @@
         height: 85%;
 
         @include respond(phone) {
-            white-space: nowrap;
             height: 150vh;
             flex-direction: column;
-            overflow-y: auto;
-            &::-webkit-scrollbar {
-                width: 5px;
-            }
-            &::-webkit-scrollbar-track {
-                background: #333; 
-            }
-            &::-webkit-scrollbar-thumb {
-                background: $color-white; 
-            }
-            &::-webkit-scrollbar-thumb:hover {
-                background: #777; 
-            }
+            overflow-y: scroll;
+            @include scrollbar1;
         }
 
         &-column1 {
@@ -482,14 +470,14 @@
 
                 & > * {
                     z-index: 100;
-
+                    /*
                     & > * {
                         z-index: 100;
                         /*
                         & > * {
                             z-index: 100;
-                        } */
-                    }
+                        } 
+                    } */
 
                 }
             }

@@ -169,10 +169,9 @@ h1 {
     height: 85%; }
     @media only screen and (max-width: 37.5em) {
       .container-top .main-box {
-        white-space: nowrap;
         height: 150vh;
         flex-direction: column;
-        overflow-y: auto; }
+        overflow-y: scroll; }
         .container-top .main-box::-webkit-scrollbar {
           width: 5px; }
         .container-top .main-box::-webkit-scrollbar-track {
@@ -372,13 +371,15 @@ h1 {
           flex: none;
           z-index: 100; }
           .container-left .main-box-row1 > *, .container-left .main-box-row2 > * {
-            z-index: 100; }
-            .container-left .main-box-row1 > * > *, .container-left .main-box-row2 > * > * {
-              z-index: 100;
-              /*
+            z-index: 100;
+            /*
+                    & > * {
+                        z-index: 100;
+                        /*
                         & > * {
                             z-index: 100;
-                        } */ } }
+                        } 
+                    } */ } }
     @media only screen and (max-width: 37.5em) {
       .container-left .main-box > * > * {
         flex-basis: unset; } }
