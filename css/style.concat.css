@@ -506,7 +506,7 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     .main-container {
       height: 78vh;
-      margin-top: -8vh; } }
+      margin-top: -8rem; } }
   .main-container i {
     font-size: 6rem;
     color: #fff;
@@ -796,6 +796,7 @@ h1 {
         .container-left__button-right .icon {
           transform: translateY(6px); } }
   .container-left .main-box {
+    z-index: 50;
     display: flex;
     flex: 1;
     height: 150vh;
@@ -998,8 +999,7 @@ h1 {
     .container-right .prova p {
       height: 100%;
       font-size: 6rem;
-      color: #fff;
-      z-index: 100; }
+      color: #fff; }
 
 .container-bottom {
   transform: rotateX(-180deg);
