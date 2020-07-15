@@ -260,8 +260,11 @@
                         @include respond(phone) {
                             height: 15rem;
 
-                            .img3 {
+                            .img3, .img4 {
                                 background-position: center;
+                            }
+                            .img2 {
+                                background-position: -1.4rem;
                             }
                         }
 
@@ -711,15 +714,6 @@
     background-image: url("../img/sfondo2.jpeg");
     background-size: cover;
 
-    &__text {
-        flex-basis: 50%;
-
-        color: #fff;
-        font-size: 2.4rem;
-        text-align: center;
-        padding: 0 1rem;
-
-    }
 
     &--active {
         transform: rotateY(0deg);
@@ -732,6 +726,18 @@
         }
     }
 
+    .mainbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include text1;
+        font-size: 3.5rem;
+        p {
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+    }
+
     .sad-icon {
         width: 10rem;
         height: 10rem;
@@ -739,25 +745,6 @@
         background-size: cover;
     }
 
-    //position: relative;
-    .prova {
-        height: 100%;
-        min-height: 50vh;
-        padding: 2rem;
-        margin-top: 10rem;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        -webkit-touch-overflow: scroll;
-        @include scrollbar1;
-
-        z-index: 100;
-        p {
-            z-index: 100;
-            height: 100%;
-            font-size: 6rem;
-            color: #fff;
-        }
-    }
 
 }
 
