@@ -794,6 +794,7 @@ h1 {
         .container-left__button-right .icon {
           transform: translateY(6px); } }
   .container-left .main-box {
+    z-index: 100;
     display: flex;
     flex: 1;
     height: 150vh;
@@ -816,7 +817,9 @@ h1 {
         flex-direction: column; }
       @media only screen and (max-width: 37.5em) {
         .container-left .main-box-row1, .container-left .main-box-row2 {
-          flex-direction: column; } }
+          flex-direction: column;
+          flex: none;
+          z-index: 100; } }
     @media only screen and (max-width: 37.5em) {
       .container-left .main-box > * > * {
         flex-basis: unset; } }

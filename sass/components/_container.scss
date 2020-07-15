@@ -457,6 +457,7 @@
     }
     
     .main-box {
+        z-index: 100;
 
         display: flex;
         flex: 1;
@@ -487,6 +488,8 @@
 
             @include respond(phone) {
                 flex-direction: column;
+                flex: none;
+                z-index: 100;
             }
         }
 
