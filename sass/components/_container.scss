@@ -465,18 +465,7 @@
         width: 100%;
         overflow-y: scroll;
         -webkit-overflow-scrolling:touch;
-        &::-webkit-scrollbar {
-            width: 5px;
-        }
-        &::-webkit-scrollbar-track {
-            background: #333; 
-        }
-        &::-webkit-scrollbar-thumb {
-            background: $color-white; 
-        }
-        &::-webkit-scrollbar-thumb:hover {
-            background: #777; 
-        }
+        @include scrollbar1;
 
         flex-direction: column;
         &-row1, &-row2 {
@@ -772,6 +761,7 @@
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         -webkit-touch-overflow: scroll;
+        @include scrollbar1;
 
         z-index: 100;
         p {
