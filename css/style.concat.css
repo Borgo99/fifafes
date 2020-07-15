@@ -680,7 +680,8 @@ h1 {
             justify-content: center; }
             @media only screen and (max-width: 37.5em) {
               .container-top .main-box-column1 .box_mvp .mvp__img {
-                height: 15rem; }
+                height: 15rem;
+                flex: none; }
                 .container-top .main-box-column1 .box_mvp .mvp__img .img3 {
                   background-position: center; } }
             .container-top .main-box-column1 .box_mvp .mvp__img > * {
@@ -732,7 +733,7 @@ h1 {
         @media only screen and (max-width: 37.5em) {
           .container-top .main-box-column2 .box-container-info {
             overflow-y: unset;
-            margin-top: 5rem; } }
+            margin-top: 70vh; } }
         .container-top .main-box-column2 .box-container-info p, .container-top .main-box-column2 .box-container-info i {
           font-size: 6rem;
           color: #ffffe6;
@@ -818,17 +819,20 @@ h1 {
         .container-left .main-box-row1, .container-left .main-box-row2 {
           flex-direction: column;
           flex: none;
-          z-index: 100; }
-          .container-left .main-box-row1 > *, .container-left .main-box-row2 > * {
-            z-index: 100;
-            /*
+          z-index: 100;
+          /*
+                & > * {
+                    z-index: 100;
+                    
                     & > * {
                         z-index: 100;
                         /*
                         & > * {
                             z-index: 100;
                         } 
-                    } */ } }
+                    } 
+
+                } */ } }
     @media only screen and (max-width: 37.5em) {
       .container-left .main-box > * > * {
         flex-basis: unset; } }

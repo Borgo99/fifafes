@@ -262,6 +262,7 @@
 
                         @include respond(phone) {
                             height: 15rem;
+                            flex: none;
 
                             .img3 {
                                 background-position: center;
@@ -328,22 +329,11 @@
                 margin-top: 10rem;
 
                 overflow-y: scroll;
-                &::-webkit-scrollbar {
-                    width: 5px;
-                }
-                &::-webkit-scrollbar-track {
-                    background: #333; 
-                }
-                &::-webkit-scrollbar-thumb {
-                    background: $color-white; 
-                }
-                &::-webkit-scrollbar-thumb:hover {
-                    background: #777; 
-                }
+                @include scrollbar1;
 
                 @include respond(phone) {
                     overflow-y: unset;
-                    margin-top: 5rem;
+                    margin-top: 70vh;
                 }
 
                 p, i {
@@ -467,19 +457,19 @@
                 flex-direction: column;
                 flex: none;
                 z-index: 100;
-
+                /*
                 & > * {
                     z-index: 100;
-                    /*
+                    
                     & > * {
                         z-index: 100;
                         /*
                         & > * {
                             z-index: 100;
                         } 
-                    } */
+                    } 
 
-                }
+                } */
             }
         }
 
