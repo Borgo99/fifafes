@@ -993,6 +993,7 @@ h1 {
     -webkit-touch-overflow: scroll;
     z-index: 100; }
     .container-right .prova p {
+      height: 100%;
       font-size: 6rem;
       color: #fff;
       z-index: 100; }
