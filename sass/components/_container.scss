@@ -193,8 +193,9 @@
         height: 85%;
 
         @include respond(phone) {
-            height: 100%;
-            flex-direction: column;
+            //height: 100%;
+            //flex-direction: column;
+            display: block;
             overflow-y: scroll;
             @include scrollbar1;
         }

@@ -615,8 +615,7 @@ h1 {
     height: 85%; }
     @media only screen and (max-width: 37.5em) {
       .container-top .main-box {
-        height: 100%;
-        flex-direction: column;
+        display: block;
         overflow-y: scroll; }
         .container-top .main-box::-webkit-scrollbar {
           width: 5px; }
