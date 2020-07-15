@@ -469,6 +469,9 @@ body {
   box-sizing: border-box;
   background-image: linear-gradient(to bottom right, #c03d23, #ce8013);
   overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      z-index: 1; } }
 
 a {
   text-decoration: none; }

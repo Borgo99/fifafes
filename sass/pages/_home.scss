@@ -22,6 +22,7 @@ body {
     overflow: hidden;
 
     @include respond(phone) {
+        z-index: 1;
     }
 }
 
