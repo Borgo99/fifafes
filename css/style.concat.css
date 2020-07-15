@@ -728,7 +728,8 @@ h1 {
         @media only screen and (max-width: 37.5em) {
           .container-top .main-box-column2 .box-container-info {
             overflow-y: unset;
-            margin-top: 10vh; } }
+            margin-top: 5vh;
+            padding-bottom: 10vh; } }
         .container-top .main-box-column2 .box-container-info p, .container-top .main-box-column2 .box-container-info i {
           font-size: 6rem;
           color: #ffffe6;

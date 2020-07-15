@@ -329,7 +329,8 @@
 
                 @include respond(phone) {
                     overflow-y: unset;
-                    margin-top: 10vh;
+                    margin-top: 5vh;
+                    padding-bottom: 10vh;
                 }
 
                 p, i {
