@@ -823,9 +823,11 @@ h1 {
           .container-left .main-box-row1 > *, .container-left .main-box-row2 > * {
             z-index: 100; }
             .container-left .main-box-row1 > * > *, .container-left .main-box-row2 > * > * {
-              z-index: 100; }
-              .container-left .main-box-row1 > * > * > *, .container-left .main-box-row2 > * > * > * {
-                z-index: 100; } }
+              z-index: 100;
+              /*
+                        & > * {
+                            z-index: 100;
+                        } */ } }
     @media only screen and (max-width: 37.5em) {
       .container-left .main-box > * > * {
         flex-basis: unset; } }
