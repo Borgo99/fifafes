@@ -34,7 +34,6 @@
     }
 
     & > * {
-        z-index: 30;
         height: inherit;
         width: inherit;
         position: absolute;
@@ -47,6 +46,8 @@
             overflow: hidden;
             -webkit-overflow-scrolling: hidden;
         }
+
+        z-index: 30;
 
         background-image: $color-juicy-orange;
         box-shadow: 0rem 2rem 2rem rgba($color: #000000, $alpha: 0.4);
@@ -61,10 +62,6 @@
 
 //BUTTONS EFFECTS
 [class^="container"] {
-
-    [class$="--active"] {
-        z-index: 35;
-    }
 
     [class*="__button"] {
         transition: all .3s;
@@ -410,6 +407,7 @@
 
     &--active {
         transform: rotateX(0deg);
+        z-index: 35;
     }
 }
 
@@ -435,6 +433,7 @@
 
     &--active {
         transform: rotateY(0deg);
+        z-index: 35;
     }
 
     &__button-right {
@@ -745,6 +744,7 @@
 
     &--active {
         transform: rotateY(0deg);
+        z-index: 35;
     }
 
     .container__button-left {
@@ -805,6 +805,7 @@
 
     &--active {
         transform: rotateX(0deg);
+        z-index: 35;
     }
 
 }
