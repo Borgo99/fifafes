@@ -20,7 +20,7 @@
 
     @include respond(phone) {
         height: 78vh;
-        margin-top: -8rem;
+        margin-top: -10rem;
     }
 
     i {
@@ -459,8 +459,6 @@
     }
     
     .main-box {
-
-        z-index: 50;
 
         display: flex;
         flex: 1;
