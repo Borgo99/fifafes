@@ -62,6 +62,10 @@
 //BUTTONS EFFECTS
 [class^="container"] {
 
+    [class$="--active"] {
+        z-index: 35;
+    }
+
     [class*="__button"] {
         transition: all .3s;
 
@@ -720,7 +724,6 @@
 
 //CONTAINER RIGHT 
 .container-right {
-    z-index: 32;
     transform: rotateY(180deg);
     height: 100%;
     min-height: 0;
