@@ -20,7 +20,7 @@
 
     @include respond(phone) {
         height: 78vh;
-        margin-top: -5vh;
+        margin-top: -8vh;
     }
 
     i {
@@ -757,7 +757,7 @@
 
     //position: relative;
     .prova {
-        height: 70%;
+        height: 100%;
         min-height: 50vh;
         padding: 2rem;
         margin-top: 10rem;

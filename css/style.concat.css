@@ -506,7 +506,7 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     .main-container {
       height: 78vh;
-      margin-top: -5vh; } }
+      margin-top: -8vh; } }
   .main-container i {
     font-size: 6rem;
     color: #fff;
@@ -984,7 +984,7 @@ h1 {
     background-image: url("../img/icon-sad.png");
     background-size: cover; }
   .container-right .prova {
-    height: 70%;
+    height: 100%;
     min-height: 50vh;
     padding: 2rem;
     margin-top: 10rem;
