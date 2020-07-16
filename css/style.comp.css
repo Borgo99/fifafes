@@ -63,7 +63,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20vh; }
+  padding-bottom: env(safe-area-inset-bottom); }
 
 .main-container {
   z-index: 20;
