@@ -324,6 +324,8 @@
                 align-items: center;
                 margin-top: 10rem;
 
+                line-height: 3.2rem;
+
                 overflow-y: scroll;
                 @include scrollbar1;
 
@@ -336,6 +338,11 @@
                 p, i {
                     @include text1;
                     font-size: 1.8rem;
+
+                    b {
+                        font-size: 2rem;
+                        letter-spacing: 1px;
+                    }
                 }
 
                 .box-info1, .box-info2 {
