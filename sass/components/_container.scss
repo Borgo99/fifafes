@@ -9,7 +9,7 @@
     align-items: center;
 
     //padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    padding-bottom: 10vh;
+    padding-bottom: calc(env(safe-area-inset-right) + 10vh);
 
 }
 
