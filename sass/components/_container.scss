@@ -742,6 +742,17 @@
     background-image: url("../img/sfondo2.jpeg");
     background-size: cover;
 
+    @include respond(phone) {
+        background-position: center;
+        flex-direction: column-reverse;
+
+        .mainbox {
+            flex: 1;
+            margin-top: 40%;
+            font-size: 3rem !important;
+        }
+    }
+
 
     &--active {
         transform: rotateY(0deg);
@@ -751,6 +762,10 @@
     .container__button-left {
         .icon {
             transform: translateY(-10px);
+        }
+        
+        @include respond(phone) {
+            transform: translateX(-1rem);
         }
     }
 
@@ -787,6 +802,10 @@
     align-items: center;
     background-image: url("../img/sfondo2.jpeg");
     background-size: cover;
+
+    @include respond(phone){
+        background-position: center;
+    }
 
     &__text {
         flex: 1;

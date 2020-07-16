@@ -711,12 +711,38 @@ h1 {
   display: flex;
   align-items: center;
   background-image: url("../img/sfondo2.jpeg");
-  background-size: cover; }
+  background-size: cover;
+  /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+  @media only screen and (max-width: 56.25em) {
+    .container-right {
+      background-position: center;
+      flex-direction: column-reverse; }
+      .container-right .mainbox {
+        flex: 1;
+        margin-top: 40%;
+        font-size: 3rem !important; } }
   .container-right--active {
     transform: rotateY(0deg);
     z-index: 35; }
-  .container-right .container__button-left .icon {
-    transform: translateY(-10px); }
+  .container-right .container__button-left {
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+    .container-right .container__button-left .icon {
+      transform: translateY(-10px); }
+    @media only screen and (max-width: 56.25em) {
+      .container-right .container__button-left {
+        transform: translateX(-1rem); } }
   .container-right .mainbox {
     display: flex;
     flex-direction: column;
@@ -741,7 +767,17 @@ h1 {
   justify-content: center;
   align-items: center;
   background-image: url("../img/sfondo2.jpeg");
-  background-size: cover; }
+  background-size: cover;
+  /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+  @media only screen and (max-width: 56.25em) {
+    .container-bottom {
+      background-position: center; } }
   .container-bottom__text {
     flex: 1;
     color: #fff;
