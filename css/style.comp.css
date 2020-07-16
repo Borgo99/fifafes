@@ -15,16 +15,30 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Montserrat"; }
-  @media only screen and (max-width: 37.5em) {
+  font-family: "Montserrat";
+  /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
 
 body {
   box-sizing: border-box;
   background-image: linear-gradient(to bottom right, #c03d23, #ce8013);
-  overflow: hidden; }
-  @media only screen and (max-width: 37.5em) {
+  overflow: hidden;
+  /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+  @media only screen and (max-width: 56.25em) {
     body {
       z-index: 1; } }
 
@@ -57,8 +71,15 @@ h1 {
   height: 85vh;
   width: 95vw;
   position: relative;
+  /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */
   transition: all .4s; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .main-container {
       height: 78vh;
       margin-top: -10rem; } }
@@ -77,10 +98,17 @@ h1 {
     transition: all 2s ease;
     backface-visibility: hidden;
     overflow: hidden;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */
     z-index: 30;
     background-image: linear-gradient(to top left, #ff8008, #ffc837);
     box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4); }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .main-container > * {
         overflow: hidden;
         -webkit-overflow-scrolling: hidden; } }
@@ -108,8 +136,15 @@ h1 {
   .container__box-middle {
     flex: 1;
     justify-content: center;
-    align-items: center; }
-    @media only screen and (max-width: 37.5em) {
+    align-items: center;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+    @media only screen and (max-width: 56.25em) {
       .container__box-middle {
         display: flex;
         flex-direction: column;
@@ -134,8 +169,15 @@ h1 {
     text-transform: uppercase;
     text-shadow: 0px 1px 7px #000;
     cursor: default;
-    user-select: none; }
-    @media only screen and (max-width: 37.5em) {
+    user-select: none;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+    @media only screen and (max-width: 56.25em) {
       .container__logo {
         display: contents; } }
   .container__button-top, .container__button-bottom {
@@ -167,8 +209,22 @@ h1 {
   background-size: cover; }
   .container-top .main-box {
     display: flex;
-    height: 85%; }
-    @media only screen and (max-width: 37.5em) {
+    height: 85%;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+    @media only screen and (max-width: 56.25em) {
       .container-top .main-box {
         display: block;
         overflow-y: scroll; }
@@ -215,10 +271,17 @@ h1 {
             font-size: 2rem;
             text-align: center; }
           .container-top .main-box-column1 .box_mvp .mvp__title {
-            font-size: 1.5rem; }
+            font-size: 1.5rem;
+            /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
             .container-top .main-box-column1 .box_mvp .mvp__title br {
               display: none; }
-            @media only screen and (max-width: 37.5em) {
+            @media only screen and (max-width: 56.25em) {
               .container-top .main-box-column1 .box_mvp .mvp__title {
                 font-size: 2rem;
                 padding: 1rem 2rem; }
@@ -228,8 +291,15 @@ h1 {
             flex: 1;
             width: 100%;
             display: flex;
-            justify-content: center; }
-            @media only screen and (max-width: 37.5em) {
+            justify-content: center;
+            /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+            @media only screen and (max-width: 56.25em) {
               .container-top .main-box-column1 .box_mvp .mvp__img {
                 height: 15rem; }
                 .container-top .main-box-column1 .box_mvp .mvp__img .img1, .container-top .main-box-column1 .box_mvp .mvp__img .img2, .container-top .main-box-column1 .box_mvp .mvp__img .img3, .container-top .main-box-column1 .box_mvp .mvp__img .img4 {
@@ -272,7 +342,14 @@ h1 {
         align-items: center;
         margin-top: 10rem;
         line-height: 3.2rem;
-        overflow-y: scroll; }
+        overflow-y: scroll;
+        /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
         .container-top .main-box-column2 .box-container-info::-webkit-scrollbar {
           width: 5px; }
         .container-top .main-box-column2 .box-container-info::-webkit-scrollbar-track {
@@ -281,7 +358,7 @@ h1 {
           background: #ffffe6; }
         .container-top .main-box-column2 .box-container-info::-webkit-scrollbar-thumb:hover {
           background: #777; }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 56.25em) {
           .container-top .main-box-column2 .box-container-info {
             overflow-y: unset;
             margin-top: 5vh;
@@ -299,7 +376,7 @@ h1 {
         .container-top .main-box-column2 .box-container-info .box-info2 {
           padding-top: 3rem;
           text-align: left; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .container-top .main-box-column1 {
         flex-basis: unset; } }
   .container-top #container-top__icon {
@@ -311,8 +388,15 @@ h1 {
     animation-name: keepJumping;
     animation-duration: .6s;
     animation-iteration-count: infinite;
-    animation-direction: alternate; }
-    @media only screen and (max-width: 37.5em) {
+    animation-direction: alternate;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+    @media only screen and (max-width: 56.25em) {
       .container-top #container-top__icon {
         display: initial; } }
     .container-top #container-top__icon .disappear {
@@ -322,8 +406,15 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    @media only screen and (max-width: 37.5em) {
+    align-items: center;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+    @media only screen and (max-width: 56.25em) {
       .container-top__button-bottom {
         width: 90%;
         margin: 0 auto; }
@@ -343,8 +434,15 @@ h1 {
   justify-content: flex-end;
   background-image: url("../img/sfondo.png");
   background-size: cover;
-  height: 100%; }
-  @media only screen and (max-width: 37.5em) {
+  height: 100%;
+  /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+  @media only screen and (max-width: 67.2em) {
     .container-left {
       flex-direction: column; } }
   .container-left--active {
@@ -353,10 +451,17 @@ h1 {
   .container-left__button-right {
     display: flex;
     justify-content: flex-end;
-    flex-basis: 19%; }
+    flex-basis: 19%;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
     .container-left__button-right .icon {
       transform: translateY(-10px); }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 67.2em) {
       .container-left__button-right {
         flex-basis: 10%;
         align-items: center;
@@ -367,11 +472,19 @@ h1 {
     z-index: 100;
     display: flex;
     flex: 1;
-    height: 150vh;
+    height: 100%;
     width: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-    flex-direction: column; }
+    flex-direction: column;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
     .container-left .main-box::-webkit-scrollbar {
       width: 5px; }
     .container-left .main-box::-webkit-scrollbar-track {
@@ -381,29 +494,23 @@ h1 {
     .container-left .main-box::-webkit-scrollbar-thumb:hover {
       background: #777; }
     .container-left .main-box-row1, .container-left .main-box-row2 {
-      display: flex; }
+      display: flex;
+      /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
       .container-left .main-box-row1 > *, .container-left .main-box-row2 > * {
         display: flex;
         flex-direction: column; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 67.2em) {
         .container-left .main-box-row1, .container-left .main-box-row2 {
           flex-direction: column;
           flex: none;
-          z-index: 100;
-          /*
-                & > * {
-                    z-index: 100;
-                    
-                    & > * {
-                        z-index: 100;
-                        /*
-                        & > * {
-                            z-index: 100;
-                        } 
-                    } 
-
-                } */ } }
-    @media only screen and (max-width: 37.5em) {
+          z-index: 100; } }
+    @media only screen and (max-width: 67.2em) {
       .container-left .main-box > * > * {
         flex-basis: unset; } }
     .container-left .main-box .box-classifica {
@@ -455,7 +562,18 @@ h1 {
         text-align: center; }
       .container-left .main-box .box-scorer__list {
         list-style: none;
-        padding: 0 15%; }
+        padding: 0 15%;
+        /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+        @media only screen and (max-width: 67.2em) {
+          .container-left .main-box .box-scorer__list {
+            padding: 0 20%;
+            font-size: 1.8rem; } }
         .container-left .main-box .box-scorer__list--scorer {
           display: flex;
           background-color: #ffffe6;
@@ -466,7 +584,17 @@ h1 {
             color: #ce8013;
             font-family: "eafont";
             font-size: 1.5rem;
-            padding: .8rem 1.5rem; }
+            padding: .8rem 1.5rem;
+            /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
+            @media only screen and (max-width: 67.2em) {
+              .container-left .main-box .box-scorer__list--scorer > * {
+                font-size: 1.8rem; } }
           .container-left .main-box .box-scorer__list--scorer__name {
             flex-basis: 60%; }
           .container-left .main-box .box-scorer__list--scorer__goals {
@@ -483,9 +611,16 @@ h1 {
         font-family: "eafont";
         font-size: 3.5rem;
         padding: 1rem 5rem;
+        /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */
         text-shadow: 0px 1px 8px #000;
         text-align: center; }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 67.2em) {
           .container-left .main-box .box-gc__title, .container-left .main-box .box-gs__title {
             padding: 0;
             padding-bottom: 1.1rem; } }
@@ -512,11 +647,18 @@ h1 {
       border: solid #999 1px; }
     .container-left .main-box .box-gs {
       padding: 0;
-      padding-right: 5rem; }
+      padding-right: 5rem;
+      /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
       .container-left .main-box .box-gs__list--player:hover {
         transform: scale(1.2) skewX(-5deg) skewY(2deg);
         border: solid #999 1px; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 67.2em) {
         .container-left .main-box .box-gs {
           padding: 0 20%;
           padding-bottom: 5vh; } }
@@ -534,14 +676,21 @@ h1 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    transition: all .2s; }
+    transition: all .2s;
+    /*
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    } */ }
     .container-left .download-btn:hover {
       transform: scale(1.1);
       color: #ffffe6;
       background-color: #ce8013; }
     .container-left .download-btn:active {
       transform: scale(0.9); }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 67.2em) {
       .container-left .download-btn {
         width: 35%;
         position: unset;
