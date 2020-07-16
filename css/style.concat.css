@@ -518,7 +518,7 @@ h1 {
   perspective: 120rem;
   -moz-perspective: 120rem;
   height: 85vh;
-  width: 95vw;
+  width: 90vw;
   position: relative;
   /*
     @if $breakpoint == tab-land {
@@ -919,7 +919,7 @@ h1 {
           transform: translateY(6px); } }
   .container-left .main-box {
     z-index: 100;
-    display: flex;
+    display: block;
     flex: 1;
     height: 100%;
     width: 100%;
@@ -960,10 +960,12 @@ h1 {
           flex: none;
           z-index: 100; } }
     .container-left .main-box-row1 {
-      flex-basis: 100%; }
+      flex-basis: 110%; }
     @media only screen and (max-width: 67.2em) {
-      .container-left .main-box > * > * {
-        flex-basis: unset; } }
+      .container-left .main-box {
+        display: block; }
+        .container-left .main-box > * > * {
+          flex-basis: unset; } }
     .container-left .main-box .box-classifica {
       flex-basis: 60%;
       padding: 2rem 5%;
@@ -1143,6 +1145,7 @@ h1 {
       transform: scale(0.9); }
     @media only screen and (max-width: 67.2em) {
       .container-left .download-btn {
+        display: block;
         width: 35%;
         position: unset;
         margin: 0 auto;

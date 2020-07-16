@@ -15,7 +15,7 @@
     perspective: 120rem;
     -moz-perspective: 120rem;
     height: 85vh;
-    width: 95vw;
+    width: 90vw;
     position: relative;
 
     @include respond(phone) {
@@ -463,7 +463,7 @@
     .main-box {
         z-index: 100;
 
-        display: flex;
+        display: block;
         flex: 1;
         height: 100%;
         width: 100%;
@@ -487,10 +487,11 @@
             }
         }
         &-row1 {
-            flex-basis: 100%;
+            flex-basis: 110%;
         }
 
         @include respond(tab-port) {
+            display: block;
             & > * {
                 & > * { 
                     flex-basis: unset;
@@ -719,6 +720,7 @@
         }
 
         @include respond(tab-port) {
+            display: block;
             width: 35%;
             position: unset;
             margin: 0 auto;
