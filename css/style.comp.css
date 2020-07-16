@@ -2,6 +2,10 @@
   font-family: 'eafont';
   src: url("fonts/EASPORTS15.ttf"); }
 
+@keyframes keepJumping {
+  100% {
+    transform: translate(-50%, -75%); } }
+
 *,
 *::after,
 *::before {
@@ -228,10 +232,8 @@ h1 {
             @media only screen and (max-width: 37.5em) {
               .container-top .main-box-column1 .box_mvp .mvp__img {
                 height: 15rem; }
-                .container-top .main-box-column1 .box_mvp .mvp__img .img3, .container-top .main-box-column1 .box_mvp .mvp__img .img4 {
-                  background-position: center; }
-                .container-top .main-box-column1 .box_mvp .mvp__img .img2 {
-                  background-position: -1.4rem; } }
+                .container-top .main-box-column1 .box_mvp .mvp__img .img1, .container-top .main-box-column1 .box_mvp .mvp__img .img2, .container-top .main-box-column1 .box_mvp .mvp__img .img3, .container-top .main-box-column1 .box_mvp .mvp__img .img4 {
+                  background-position: center; } }
             .container-top .main-box-column1 .box_mvp .mvp__img > * {
               border: solid 1.4px #ffffe6;
               border-radius: 5px;
@@ -296,6 +298,21 @@ h1 {
     @media only screen and (max-width: 37.5em) {
       .container-top .main-box-column1 {
         flex-basis: unset; } }
+  .container-top #container-top__icon {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: keepJumping;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+    @media only screen and (max-width: 37.5em) {
+      .container-top #container-top__icon {
+        display: initial; } }
+    .container-top #container-top__icon .disappear {
+      display: none; }
   .container-top__button-bottom {
     align-self: flex-end;
     display: flex;

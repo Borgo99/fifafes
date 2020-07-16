@@ -260,11 +260,8 @@
                         @include respond(phone) {
                             height: 15rem;
 
-                            .img3, .img4 {
+                            .img1, .img2, .img3, .img4 {
                                 background-position: center;
-                            }
-                            .img2 {
-                                background-position: -1.4rem;
                             }
                         }
 
@@ -357,6 +354,28 @@
             }
         }
     }
+
+    #container-top__icon {
+        display: none;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+
+        animation-name: keepJumping;
+        animation-duration: .6s;  
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        @include respond(phone) {
+            display: initial;
+        }
+
+        .disappear {
+            display: none;
+        }
+
+    } 
 
     &__button-bottom {
         align-self: flex-end;
