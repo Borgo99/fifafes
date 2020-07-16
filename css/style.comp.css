@@ -510,6 +510,8 @@ h1 {
           flex-direction: column;
           flex: none;
           z-index: 100; } }
+    .container-left .main-box-row1 {
+      flex-basis: 100%; }
     @media only screen and (max-width: 67.2em) {
       .container-left .main-box > * > * {
         flex-basis: unset; } }
