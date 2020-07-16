@@ -1130,6 +1130,7 @@ h1 {
     font-size: 1.5rem;
     font-weight: 600;
     transition: all .2s;
+    -webkit-transition: all .2s;
     /*
     @if $breakpoint == tab-land {
         @media only screen and (max-width: 75em) { @content };    //1200px
@@ -1139,6 +1140,7 @@ h1 {
     } */ }
     .container-left .download-btn:hover {
       transform: scale(1.1);
+      -webkit-transform: scale(1.1);
       color: #ffffe6;
       background-color: #ce8013; }
     .container-left .download-btn:active {

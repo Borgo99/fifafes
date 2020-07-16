@@ -710,8 +710,10 @@
         font-weight: 600;
 
         transition: all .2s;
+        -webkit-transition: all .2s;
         &:hover {
             transform: scale(1.1);
+            -webkit-transform: scale(1.1);
             color: $color-white;
             background-color: $color-orange;
         }
