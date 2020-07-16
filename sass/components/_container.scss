@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    //padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 
 }
 
@@ -22,7 +22,7 @@
 
     @include respond(phone) {
         height: 78vh;
-        margin-top: -10rem;
+        //margin-top: -10rem;
     }
 
     i {
