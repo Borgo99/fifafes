@@ -532,6 +532,7 @@ h1 {
   @media only screen and (max-width: 56.25em) {
     .main-container {
       height: 78vh;
+      margin-top: -constant(safe-area-inset-bottom);
       margin-top: -env(safe-area-inset-bottom); } }
   .main-container i {
     font-size: 6rem;
