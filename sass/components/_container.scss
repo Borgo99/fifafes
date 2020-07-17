@@ -23,7 +23,7 @@
 
     @include respond(phone) {
         height: 78vh;
-        //margin-top: -10rem;
+        margin-top: env(safe-area-inset-bottom);
     }
 
     i {

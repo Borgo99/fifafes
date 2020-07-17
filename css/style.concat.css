@@ -530,7 +530,8 @@ h1 {
   transition: all .4s; }
   @media only screen and (max-width: 56.25em) {
     .main-container {
-      height: 78vh; } }
+      height: 78vh;
+      margin-top: env(safe-area-inset-bottom); } }
   .main-container i {
     font-size: 6rem;
     color: #fff;
