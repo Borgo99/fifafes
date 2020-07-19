@@ -95,6 +95,11 @@
     &__box-top {
         flex-basis: 15%;
         justify-content: center;
+
+        @include respond(phone) {
+            flex-basis: 10%;
+            transform: translateY(-1rem);
+        }
     }
 
     &__box-middle {
@@ -124,6 +129,11 @@
         flex-basis: 15%;
         justify-content: center;
         align-items: flex-end;
+
+        @include respond(phone) {
+            flex-basis: 10%;
+            transform: translateY(1rem);
+        }
     }
 
     &__logo {
