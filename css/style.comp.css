@@ -228,7 +228,8 @@ h1 {
     @media only screen and (max-width: 56.25em) {
       .container-top .main-box {
         display: block;
-        overflow-y: scroll; }
+        overflow-y: scroll;
+        overflow-x: hidden; }
         .container-top .main-box::-webkit-scrollbar {
           width: 5px; }
         .container-top .main-box::-webkit-scrollbar-track {
