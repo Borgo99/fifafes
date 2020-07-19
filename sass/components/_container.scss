@@ -9,7 +9,9 @@
     align-items: center;
 
     //padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    padding-bottom: calc(env(safe-area-inset-bottom) + 8vh);
+    @include respond(phone) {
+        padding-bottom: calc(env(safe-area-inset-bottom) + 8vh);
+    }
 
 }
 
@@ -98,7 +100,7 @@
 
         @include respond(phone) {
             flex-basis: 10%;
-            transform: translateY(-1rem);
+            transform: translateY(-.7rem);
         }
     }
 
@@ -132,7 +134,7 @@
 
         @include respond(phone) {
             flex-basis: 10%;
-            transform: translateY(1rem);
+            transform: translateY(.7rem);
         }
     }
 
